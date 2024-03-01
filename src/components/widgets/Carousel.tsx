@@ -62,7 +62,7 @@ const Carousel: FC<SlideProps> = ( {slides} ) => {
 
                         <div className="ml-24 float-end col-span-1">
                             <h1 className="font-semi-bold mb-2">{slide.title}</h1>
-                            <p className="text-20px font-meduim  mb-4">{slide.description}</p>
+                            <p className="text-20px font-meduim  mb-8">{slide.description}</p>
                             <Button type="primary">Перейти</Button>
                         </div>
                     </div>

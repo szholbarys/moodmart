@@ -2,10 +2,10 @@
 import Image from "next/image";
 import styles from "@/app/ui/home.module.css";
 import logo from "../../../public/moodmart.svg";
-import { SearchIcon } from "@/components/shared/searchIcon";
-import { FavoriteIcon } from "@/components/shared/favoriteIcon";
-import { ProfileIcon } from "@/components/shared/profileIcon";
-import { CartIcon } from "@/components/shared/cartIcon";
+import { SearchIcon } from "@/components/shared/icons/searchIcon";
+import { FavoriteIcon } from "@/components/shared/icons/favoriteIcon";
+import { ProfileIcon } from "@/components/shared/icons/profileIcon";
+import { CartIcon } from "@/components/shared/icons/cartIcon";
 import { useState, useEffect } from "react";
 
 export default function Header() {

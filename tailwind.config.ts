@@ -11,7 +11,12 @@ const config: Config = {
       colors: {
         primary: "#AB8677",
         black: "#0B0B0B",
-        white: "#ffffff"
+        white: "#ffffff",
+        green: "#109836",
+        neon_green: "#23FF06",
+        orange: "#FF6109",
+        gold: "#FFD600",
+        grey: "#AEAEAE",
       },
       fontSize: {
         "16px": "16px",

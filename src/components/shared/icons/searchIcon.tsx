@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconType } from '../../core/type/iconType'
+import { IconType } from '../../../core/type/icon.type'
 
 export const SearchIcon: React.FC<IconType> = ({ size = 32, color, className="" }) => {
   return (

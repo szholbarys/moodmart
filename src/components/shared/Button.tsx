@@ -1,6 +1,6 @@
 import React from "react";
 // import styles from "@/app/ui/home.module.css";
-import { ArrowIcon } from "./arrowIcon";
+import { ArrowIcon } from "./icons/arrowIcon";
 
 interface ButtonProps {
     children: React.ReactNode;

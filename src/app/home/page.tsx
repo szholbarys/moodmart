@@ -1,4 +1,3 @@
-import styles from "@/app/ui/home.module.css";
 import Carousel from "@/components/widgets/Carousel";
 import { Stories } from "@/components/widgets/Stories";
 import { Slide } from "@/core/interfaces/slide.interface";
