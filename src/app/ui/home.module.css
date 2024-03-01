@@ -1,0 +1,32 @@
+.main {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    font-size: 1.125rem;
+    align-items: center;
+}
+
+.navbar a {
+    margin-right: 40px;
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls li {
+    margin-right: 12px;
+}
+
+/* .custom {
+    height: 40rem;
+} */
+
