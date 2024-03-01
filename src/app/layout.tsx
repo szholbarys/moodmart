@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MoodMart",
   description: "Косметика для всех",
+  icons: {
+    icon: '/images/icon.png',
+  }
 };
 
 export default function RootLayout({

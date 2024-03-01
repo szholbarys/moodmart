@@ -14,32 +14,37 @@ const slides: Slide[] = [
         image: "/images/hero.png",
         title: "Косметика",
         description: "Большой выбор"
-    }
+    },
+    {
+        image: "/images/hero.png",
+        title: "Идеи подарков",
+        description: "Выбирайте подарок близким"
+    },
 ];
 
 const stories: Story[] = [
     {
-        image: "/images/photo1",
+        image: "/images/photo1.png",
         text: "акции",
     },
     {
-        image: "/images/photo2",
+        image: "/images/photo1.png",
         text: "акции",
     },
     {
-        image: "/images/photo3",
+        image: "/images/photo1.png",
         text: "акции",
     },
     {
-        image: "/images/photo1",
+        image: "/images/photo1.png",
         text: "акции",
     },
     {
-        image: "/images/photo1",
+        image: "/images/photo1.png",
         text: "акции",
     },
     {
-        image: "/images/photo1",
+        image: "/images/photo1.png",
         text: "акции",
     },
 ];

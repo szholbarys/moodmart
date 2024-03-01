@@ -21,6 +21,7 @@ const Carousel: FC<SlideProps> = ( {slides} ) => {
         slidesToScroll: 1,
         waitForAnimate: true,
         arrows: false,
+        dotsClass: `slick-dots ${styles.dots}`,
         appendDots: (dots: JSX.Element) => (
             <div
                 style={{
@@ -34,6 +35,7 @@ const Carousel: FC<SlideProps> = ( {slides} ) => {
           customPaging: (i:number) => (
             <div
               style={{
+                padding: "0 -10px",
                 width: "10px",
                 height: "10px",
                 borderRadius: "5px",

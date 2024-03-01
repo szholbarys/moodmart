@@ -7,6 +7,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary: #AB8677;
+  --black: #0B0B0B;
+  --white: #ffffff;
 }
 
 
@@ -35,7 +38,11 @@ h1{
   font-weight: 600;
 }
 
-.slick-active>div {
-  background-color: black!important;
+li.slick-active > div {
+  background-color: var(--black)!important;
+}
+
+.slick-dots li {
+  margin: 0!important;
 }
 
