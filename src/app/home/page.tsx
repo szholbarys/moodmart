@@ -23,27 +23,27 @@ const slides: Slide[] = [
 
 const stories: Story[] = [
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
     {
-        image: "/images/photo1.png",
+        image: "/images/photo1.svg",
         text: "акции",
     },
 ];
@@ -53,6 +53,7 @@ export default function Home() {
         <>
             <Carousel slides={slides}/>
             <Stories stories={stories}/>
+            
         </>
 
     )

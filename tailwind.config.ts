@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Raleway", "sans-serif"]
+      },
       colors: {
         primary: "#AB8677",
         black: "#0B0B0B",
@@ -17,6 +20,7 @@ const config: Config = {
         orange: "#FF6109",
         gold: "#FFD600",
         grey: "#AEAEAE",
+        light_grey: "#E0E0E0"
       },
       fontSize: {
         "16px": "16px",

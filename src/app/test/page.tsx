@@ -8,14 +8,14 @@ const products: Product[] = [
         name: 'UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon',
         description: '',
         category: 'уход за лицом',
-        rating: 5,
+        rating: 2,
         ratingCount: 122,
         oldPrice: 3441,
         price: 3441,
         isNew: true,
         discount: 66,
         isHit: true,
-        image: "/images/UnleashieGlacier.png",
+        image: "/images/UnleashieGlacier.svg",
     }
 ]
 
