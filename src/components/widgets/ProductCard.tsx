@@ -20,6 +20,7 @@ export const ProductCard:React.FC<ProductProps> = ( { product } ) => {
                         width={302}
                         height={340}
                         alt={product.name}
+                        priority
                     />
                     <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
                         {product.isNew && 

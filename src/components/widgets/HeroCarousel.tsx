@@ -11,7 +11,7 @@ interface SlideProps {
     slides: Slide[];
 }
 
-const Carousel: FC<SlideProps> = ( {slides} ) => {
+const HeroCarousel: FC<SlideProps> = ( {slides} ) => {
     const settings = {
         dots: true,
         fade: true,
@@ -72,4 +72,4 @@ const Carousel: FC<SlideProps> = ( {slides} ) => {
     )
 }
 
-export default Carousel;
+export default HeroCarousel;

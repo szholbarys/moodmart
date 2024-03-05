@@ -1,4 +1,4 @@
-import Carousel from "@/components/widgets/Carousel";
+import HeroCarousel from "@/components/widgets/HeroCarousel";
 import { Stories } from "@/components/widgets/Stories";
 import { Slide } from "@/core/interfaces/slide.interface";
 import { Story } from "@/core/interfaces/story.interface";
@@ -51,7 +51,7 @@ const stories: Story[] = [
 export default function Home() {
     return (
         <>
-            <Carousel slides={slides}/>
+            <HeroCarousel slides={slides}/>
             <Stories stories={stories}/>
             
         </>
