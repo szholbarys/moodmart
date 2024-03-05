@@ -8,19 +8,20 @@ import { PrevArrowIcon } from "../shared/icons/prevArrowIcon";
 
 interface ProductCarouselProps {
     products: Product[],
-    title?: string
+    title?: string,
+    className?: string,
 }
 
-const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title = '' } ) => {
+const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, className } ) => {
+    const slider = React.useRef<Slider>(null);
     const settings = {
+      arrows: false,
       dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 1,
-      nextArrow: <ArrowIcon color="var(--black)"/>,
-      prevArrow: <PrevArrowIcon color="var(--black)"/>,
       responsive: [
         {
           breakpoint: 1024,
@@ -49,9 +50,15 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title = '' 
       ]
     };
     return (
-        <div>
-            <h3>{title}</h3>
-            <Slider  {...settings} className="w-[1440px]">
+        <div className={className}>
+          <div className="flex items-baseline justify-between mb-10">
+            <h2 className="text-h2 font-bold">{title}</h2>
+            <div>
+              <button onClick={() => slider?.current?.slickPrev()}><PrevArrowIcon color="var(--black)"/></button>
+              <button onClick={() => slider?.current?.slickNext()}><ArrowIcon color="var(--black)"/></button>
+            </div>
+          </div>
+            <Slider ref={slider}  {...settings} className="w-[1440px]">
                 {products.map((product, index) => (
                     <div key={index}>
                         <ProductCard product={product}/>

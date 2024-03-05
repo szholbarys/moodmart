@@ -66,6 +66,6 @@ const products: Product[] = productsData as Product[];
 
 export default function Test() {
     return (
-        <ProductCarousel products={products} title="Хиты"/>
+        <ProductCarousel products={products} title="Новинки"/>
     )
 }

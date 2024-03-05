@@ -4,11 +4,12 @@ import Image from 'next/image';
 
 interface StoriesProps {
     stories: Story[],
+    className?: string;
 }
 
-export const Stories:React.FC<StoriesProps> = ( { stories }) => {
+export const Stories:React.FC<StoriesProps> = ( { stories, className }) => {
     return(
-        <div className='flex justify-center mt-20'>
+        <div className={`${className} flex justify-center`}>
             {stories.map((story, index) => (
                 <div key={index} className='flex flex-col items-center mx-4'>
                     <Image 

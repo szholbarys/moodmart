@@ -9,9 +9,10 @@ import Button from "../shared/Button";
 
 interface SlideProps {
     slides: Slide[];
+    className?: string;
 }
 
-const HeroCarousel: FC<SlideProps> = ( {slides} ) => {
+const HeroCarousel: FC<SlideProps> = ( {slides, className} ) => {
     const settings = {
         dots: true,
         fade: true,
@@ -47,7 +48,7 @@ const HeroCarousel: FC<SlideProps> = ( {slides} ) => {
     };
 
     return (
-        <Slider {...settings} className={`relative h-screen w-full`}>
+        <Slider {...settings} className={`${className} relative h-screen w-full`}>
             {slides.map((slide, index) => (
                 <div key={index}>
                     <img
