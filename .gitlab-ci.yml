@@ -1,0 +1,38 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - prepare
+  - test
+  - build
+  - deploy
+
+install_dependencies:
+  stage: prepare
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+
+run_tests:
+  stage: test
+  script:
+    - npm test
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+deploy:
+  stage: deploy
+  script:
+    - npm install netlify-cli -g
+    - netlify deploy --prod --site 3914a5b9-6a32-4526-8688-d2a82a204302 --auth nfp_ASicJhYbXeVfRLhvdfy4KjKBKrdKVLpR9c16
+  only:
+    - main
