@@ -47,7 +47,7 @@ export const ProductCard:React.FC<ProductProps> = ( { product } ) => {
                     </div>
                     <div className="flex mb-2 ">
                         <p className="mr-3 text-grey line-through text-18px group-hover:text-primary hover:transition duration-200 ease-in-out">{product.oldPrice}₸</p>
-                        <p className="text-black font-semi-bold group-hover:text-primary hover:transition duration-200 ease-in-out">{product.price}₸</p>
+                        <p className="text-black text-18px font-semi-bold group-hover:text-primary hover:transition duration-200 ease-in-out">{product.price}₸</p>
                     </div>
                     <p className="text-16px text-green">{product.discount}% экономия</p>
                 </div>

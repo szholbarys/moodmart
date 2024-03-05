@@ -29,11 +29,19 @@ h1{
   font-weight: 600;
 }
 
+/* Hero carousel */
+
 li.slick-active > div {
   background-color: var(--black)!important;
 }
 
 .slick-dots li {
   margin: 0!important;
+}
+
+/* Product carousel */
+
+.slick-track {
+  display: flex;
 }
 
