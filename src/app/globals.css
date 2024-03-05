@@ -14,8 +14,8 @@
 
 body {
   font-family: "Mulish", sans-serif;
-  height: 100vh;
   font-weight: 450;
+  box-sizing: border-box
 }
 
 @layer utilities {
@@ -42,6 +42,6 @@ li.slick-active > div {
 /* Product carousel */
 
 .slick-track {
-  display: flex;
+  width: ;
 }
 

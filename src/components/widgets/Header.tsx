@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full md:w-90 flex justify-between items-center py-4 px-20 z-50 transition duration-500 ease-in-out ${
+      className={`fixed top-0 left-0 w-full flex justify-between items-center py-4 px-20 z-50 transition duration-500 ease-in-out ${
         isTransparent ? "bg-transparent" : "bg-white"
       }`}
     >

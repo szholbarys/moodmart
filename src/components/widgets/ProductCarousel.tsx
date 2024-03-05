@@ -1,6 +1,6 @@
 "use client";
 import { Product } from "@/core/type/product.type";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { ProductCard } from "./ProductCard";
 import { ArrowIcon } from "../shared/icons/arrowIcon";
@@ -13,7 +13,8 @@ interface ProductCarouselProps {
 }
 
 const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, className } ) => {
-    const slider = React.useRef<Slider>(null);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const slider = useRef<Slider>(null);
     const settings = {
       arrows: false,
       dots: false,
@@ -47,15 +48,20 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
             slidesToScroll: 1
           }
         }
-      ]
+      ],
+      afterChange: (current: number) => setCurrentSlide(current)
     };
+
+    const prevButtonDisabled = currentSlide === 0;
+    const nextButtonDisabled = currentSlide + 4 >= products.length;
+
     return (
         <div className={className}>
           <div className="flex items-baseline justify-between mb-10">
             <h2 className="text-h2 font-bold">{title}</h2>
             <div>
-              <button onClick={() => slider?.current?.slickPrev()}><PrevArrowIcon color="var(--black)"/></button>
-              <button onClick={() => slider?.current?.slickNext()}><ArrowIcon color="var(--black)"/></button>
+              <button onClick={() => !prevButtonDisabled && slider?.current?.slickPrev()} disabled={prevButtonDisabled}><PrevArrowIcon color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
+              <button onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
             </div>
           </div>
             <Slider ref={slider}  {...settings} className="w-[1440px]">
