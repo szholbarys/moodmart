@@ -41,7 +41,6 @@ li.slick-active > div {
 
 /* Product carousel */
 
-.slick-track {
-  width: ;
+.slick-list {
+  width: 100%!important;
 }
-

@@ -37,12 +37,12 @@ export default function Header() {
         width={100}
         height={53}
       />
-      <nav className={`${styles.navbar} flex justify-center ml-10 font-semi-bold`}>
-        <a href="#">каталог</a>
-        <a href="#">бренды</a>
-        <a href="#">новинки</a>
-        <a href="#">акции</a>
-        <a href="#">подарочные карты</a>
+      <nav className={`${styles.navbar} flex justify-center ml-10 font-meduim`}>
+      <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>каталог</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>бренды</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>новинки</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>акции</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>подарочные карты</a>
       </nav>
       <ul className={`${styles.controls} flex items-center`}>
                 <li>

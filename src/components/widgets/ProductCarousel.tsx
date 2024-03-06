@@ -29,8 +29,11 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: true,
-            dots: true
+            initialSlide: 1,
+            arrows: false,
+            dots: false,
+            infinite: false,
+            speed: 500,
           }
         },
         {
@@ -64,10 +67,10 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
               <button onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
             </div>
           </div>
-            <Slider ref={slider}  {...settings} className="w-[1440px]">
+            <Slider ref={slider}  {...settings}>
                 {products.map((product, index) => (
                     <div key={index}>
-                        <ProductCard product={product}/>
+                        <ProductCard product={product} />
                     </div>
                 ))}
             </Slider>
