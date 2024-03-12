@@ -1,7 +1,8 @@
 import React from "react";
 import { Product } from "@/core/type/product.type";
-import ProductCarousel from "@/components/widgets/ProductCarousel";
+import ProductCarousel from "@/components/widgets/Carousel";
 import productsData from "../../../products.json";
+import { PromoCard } from "@/components/widgets/PromoCard";
 
 const products: Product[] = productsData as Product[];
 
@@ -66,6 +67,6 @@ const products: Product[] = productsData as Product[];
 
 export default function Test() {
     return (
-        <ProductCarousel products={products} title="Новинки"/>
+        <PromoCard ctaTitle="Annayake −40%" ctaText="японский уход по суперценам" image="/images/promo1.svg" time={455520}/>
     )
 }

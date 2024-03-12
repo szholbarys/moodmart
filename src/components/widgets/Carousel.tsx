@@ -1,18 +1,16 @@
 "use client";
-import { Product } from "@/core/type/product.type";
-import React, { useRef, useState } from "react";
+import React, { ReactNode, useRef, useState } from "react";
 import Slider from "react-slick";
-import { ProductCard } from "./ProductCard";
 import { ArrowIcon } from "../shared/icons/arrowIcon";
 import { PrevArrowIcon } from "../shared/icons/prevArrowIcon";
 
-interface ProductCarouselProps {
-    products: Product[],
+interface CarouselProps {
+    children: ReactNode,
     title?: string,
     className?: string,
 }
 
-const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, className } ) => {
+const Carousel:React.FC<CarouselProps> = ({ title, className, children }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slider = useRef<Slider>(null);
     const settings = {
@@ -56,7 +54,7 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
     };
 
     const prevButtonDisabled = currentSlide === 0;
-    const nextButtonDisabled = currentSlide + 4 >= products.length;
+    const nextButtonDisabled = currentSlide + 4 >= React.Children.count(children);
 
     return (
         <div className={className}>
@@ -68,9 +66,9 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
             </div>
           </div>
             <Slider ref={slider}  {...settings}>
-                {products.map((product, index) => (
+                {React.Children.map(children, (child, index) => (
                     <div key={index}>
-                        <ProductCard product={product} />
+                        {child}
                     </div>
                 ))}
             </Slider>
@@ -78,4 +76,4 @@ const ProductCarousel:React.FC<ProductCarouselProps> = ( { products, title, clas
     )
 }
 
-export default ProductCarousel;
+export default Carousel;

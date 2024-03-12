@@ -23,6 +23,7 @@ const config: Config = {
         light_grey: "#E0E0E0"
       },
       fontSize: {
+        "10px": "10px",
         "16px": "16px",
         "18px": "18px",
         "20px": "20px",

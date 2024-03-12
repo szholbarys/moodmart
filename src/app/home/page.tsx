@@ -1,5 +1,6 @@
 import HeroCarousel from "@/components/widgets/HeroCarousel";
-import ProductCarousel from "@/components/widgets/ProductCarousel";
+import Carousel from "@/components/widgets/Carousel";
+import { ProductCard } from "@/components/widgets/ProductCard";
 import { Stories } from "@/components/widgets/Stories";
 import { Slide } from "@/core/interfaces/slide.interface";
 import { Story } from "@/core/interfaces/story.interface";
@@ -59,8 +60,20 @@ export default function Home() {
             <HeroCarousel slides={slides} className="mb-14"/>
             <Stories stories={stories} className="mb-16"/>
             <div className="mx-[80.5px]">
-                <ProductCarousel products={products} title="Новинки" className="mb-16"/>
-                <ProductCarousel products={products} title="Хиты"/>
+                <Carousel title="Новинки" className="mb-16">
+                    {products.map((product, index) => (
+                        <div key={index}>
+                            <ProductCard product={product} />
+                        </div>
+                    ))}
+                </Carousel>
+                <Carousel title="Хиты" className="mb-16">
+                    {products.map((product, index) => (
+                        <div key={index}>
+                            <ProductCard product={product} />
+                        </div>
+                    ))}
+                </Carousel>
             </div>
         </>
 
