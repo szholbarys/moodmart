@@ -7,20 +7,20 @@ import { StarRating } from "../shared/StarRating";
 
 interface ProductProps {
     product: Product
+    className?: string,
 }
 
-export const ProductCard:React.FC<ProductProps> = ( { product } ) => {
+export const ProductCard:React.FC<ProductProps> = ( { product, className } ) => {
     
     return (
-        <div className="max-w-[302px] group ">
+        <div className={`max-w-[302px] group ${className}`}>
             <a href="#">
                 <div className="relative max-w-[302px] mb-6">
-                    <Image 
+                    <img 
                         src={product.image}
                         width={302}
                         height={340}
                         alt={product.name}
-                        priority
                     />
                     <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
                         {product.isNew && 
