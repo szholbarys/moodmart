@@ -7,10 +7,11 @@ import { PrevArrowIcon } from "../shared/icons/prevArrowIcon";
 interface CarouselProps {
     children: ReactNode,
     title?: string,
+    slidesToShow: number,
     className?: string,
 }
 
-const Carousel:React.FC<CarouselProps> = ({ title, className, children }) => {
+const Carousel:React.FC<CarouselProps> = ({ title, slidesToShow, className, children }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slider = useRef<Slider>(null);
     const settings = {
@@ -18,15 +19,15 @@ const Carousel:React.FC<CarouselProps> = ({ title, className, children }) => {
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: slidesToShow,
+      slidesToScroll: slidesToShow,
       initialSlide: 1,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: slidesToShow - 1,
+            slidesToScroll: slidesToShow - 1,
             initialSlide: 1,
             arrows: false,
             dots: false,
@@ -42,19 +43,12 @@ const Carousel:React.FC<CarouselProps> = ({ title, className, children }) => {
             initialSlide: 1
           }
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
       ],
       afterChange: (current: number) => setCurrentSlide(current)
     };
 
     const prevButtonDisabled = currentSlide === 0;
-    const nextButtonDisabled = currentSlide + 4 >= React.Children.count(children);
+    const nextButtonDisabled = currentSlide + slidesToShow >= React.Children.count(children);
 
     return (
         <div className={className}>
@@ -62,10 +56,10 @@ const Carousel:React.FC<CarouselProps> = ({ title, className, children }) => {
             <h2 className="text-h2 font-bold">{title}</h2>
             <div>
               <button onClick={() => !prevButtonDisabled && slider?.current?.slickPrev()} disabled={prevButtonDisabled}><PrevArrowIcon color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
-              <button onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
+              <button className="ml-3" onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
             </div>
           </div>
-            <Slider ref={slider}  {...settings}>
+            <Slider ref={slider}  {...settings} className="w-[103%]">
                 {React.Children.map(children, (child, index) => (
                     <div key={index}>
                         {child}

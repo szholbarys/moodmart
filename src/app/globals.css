@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --primary: #AB8677;
   --black: #0B0B0B;
@@ -43,4 +44,9 @@ li.slick-active > div {
 
 .slick-list {
   width: 100%!important;
+}
+
+/* the slides */
+.slick-slide {
+  width: fit-content;
 }
