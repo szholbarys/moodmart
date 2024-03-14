@@ -9,6 +9,9 @@ import { Promo } from "@/core/type/promo.type";
 import productsData from "../../../products.json";
 import { PromoCard } from "@/components/widgets/PromoCard";
 import BrandSection from "@/components/widgets/BrandSection";
+import Brands from "@/components/widgets/Brands";
+import { Brand } from "@/core/type/brand.type";
+import brandsData from "../../../brands.json";
 
 const products: Product[] = productsData as Product[];
 
@@ -135,6 +138,8 @@ const promos: Promo [] = [
     }
 ]
 
+const brands: Brand[] = brandsData as Brand[];
+
 export default function Home() {
     return (
         <>
@@ -161,7 +166,8 @@ export default function Home() {
                         ))}
                 </Carousel>
                 <BrandSection brandName="Glossier" poster="/images/glossier.svg" direction="horizontal" products={products2} className="mb-16"/>
-                <BrandSection brandName="CLINIQUE" poster="/images/clinique.svg" direction="vertical" products={products2}/>
+                <BrandSection brandName="CLINIQUE" poster="/images/clinique.svg" direction="vertical" products={products2} className="mb-10"/>
+                <Brands brands={brands} cl/>
             </div>
         </>
 

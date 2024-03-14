@@ -1,9 +1,9 @@
 import React from "react";
 import { Product } from "@/core/type/product.type";
-import ProductCarousel from "@/components/widgets/Carousel";
-import productsData from "../../../products.json";
-import { PromoCard } from "@/components/widgets/PromoCard";
-import BrandSection from "@/components/widgets/BrandSection";
+import Brands from "@/components/widgets/Brands";
+import { Brand } from "@/core/type/brand.type";
+import brandsData from "../../../brands.json";
+
 
 // const products: Product[] = productsData as Product[];
 
@@ -52,8 +52,10 @@ const products: Product[] = [
     }
 ]
 
+const brands: Brand[] = brandsData as Brand[];
+
 export default function Test() {
     return (
-        <BrandSection brandName="Glossier" poster="/images/glossier.svg" direction="horizontal" products={products}/>
+        <Brands brands={brands}/>
     )
 }

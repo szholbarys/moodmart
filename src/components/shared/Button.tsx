@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ children, type }) => {
     const typeClass = {
       primary: `bg-black text-white`,
       ghost: "bg-transparent text-black border border-black",
-      transparent: "text-black",
+      transparent: "",
     }[type] || "";
 
     const iconColor = type === "primary" ? "white" : "black";
@@ -21,9 +21,9 @@ const Button: React.FC<ButtonProps> = ({ children, type }) => {
     const combinedClasses = `${baseClasses} ${typeClass}`;
 
     return (
-        <button className={`${combinedClasses} flex items-center`} type="button">
+        <button className={`${combinedClasses} flex items-center text-16px ${type === "transparent" ? "group hover:text-primary hover:transition duration-200 ease-in-out" : ""}`} type="button">
             {children}
-            <ArrowIcon color={iconColor} className="ml-2"/>
+            <ArrowIcon color={iconColor} className={`${type === "transparent" ? "group-hover:fill-primary ml-2 duration-200 ease-in-out" : "ml-2"}`}/>
         </button>
     )
 }

@@ -56,7 +56,7 @@ const Carousel:React.FC<CarouselProps> = ({ title, slidesToShow, className, chil
             <h2 className="text-h2 font-bold">{title}</h2>
             <div>
               <button onClick={() => !prevButtonDisabled && slider?.current?.slickPrev()} disabled={prevButtonDisabled}><PrevArrowIcon color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
-              <button className="ml-3" onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
+              <button className="ml-3" onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon size={32} color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
             </div>
           </div>
             <Slider ref={slider}  {...settings} className="w-[103%]">

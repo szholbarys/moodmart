@@ -2,6 +2,7 @@ import { Product } from "@/core/type/product.type"
 import React, { Fragment } from "react"
 import Button from "../shared/Button";
 import { ProductCard } from "./ProductCard";
+import Image from "next/image";
 
 interface BrandProps {
     brandName: string,
@@ -20,11 +21,11 @@ const BrandSection: React.FC<BrandProps> = ({brandName, poster, direction, produ
             </div>
             <div className="flex items-start justify-between">
                 {direction === 'horizontal' && (
-                    <img src={poster} alt={brandName} className="mr-20" />
+                    <Image src={poster} alt={brandName} className="mr-20" width={463} height={446}/>
                 )}
-                <div className={`flex justify-between w-full  ${direction === 'vertical' ? 'flex-col' : 'flex-row'}`}>
+                <div className={`flex  ${direction === 'vertical' ? 'flex-col' : 'flex-row'}`}>
                     {products.map((product, index) => (
-                        <ProductCard key={index} className={`${direction === 'horizontal' ? 'mr-6' : ''}`} product={product} type={direction}/>
+                        <ProductCard key={index} className={`${direction === 'horizontal' ? 'mr-6' : 'mb-6'}`} product={product} type={direction}/>
                     ))}
                 </div>
                 {direction === 'vertical' && (

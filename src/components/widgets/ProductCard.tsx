@@ -14,9 +14,9 @@ interface ProductProps {
 export const ProductCard:React.FC<ProductProps> = ( { product, className, type = "vertical"} ) => {
     
     return (
-        <div className={`group ${className} ${type === "vertical" ? "max-w-[601px]" : "max-w-[302px]"}`}>
+        <div className={`group ${className} ${type === "vertical" ? "" : "max-w-[302px]"}`}>
             <a href="#" className={`${type === "vertical" ? "flex" : "block"}`}>
-                <div className={`${type === "vertical" ? "mr-6" : "mr-0"} relative max-w-[302px] mb-6`}>
+                <div className={`${type === "vertical" ? "mr-6" : "mr-0"} relative max-w-[302px]`}>
                     <Image 
                         src={product.image}
                         width={type === "vertical" ? 200 : 302}

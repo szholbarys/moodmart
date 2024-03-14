@@ -47,7 +47,7 @@ export default function Header() {
       <ul className={`${styles.controls} flex items-center`}>
                 <li>
                     <a href="#">
-                        <SearchIcon color="black"/>
+                        <SearchIcon color="black" className={`group transition-colors ${isTransparent ? "hover:fill-white" : "hover:fill-primary"}`}/>
                     </a>
                 </li>
                 <li>

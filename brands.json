@@ -1,0 +1,74 @@
+[
+    {
+        "name": "RHODE",
+        "logo": "rhode_logo.png",
+        "description": "RHODE is a luxury fashion and lifestyle brand known for its sophisticated and elegant designs.",
+        "country_of_origin": "USA"
+    },
+    {
+        "name": "RARE BEAUTY",
+        "logo": "rare_beauty_logo.png",
+        "description": "RARE BEAUTY is a cosmetics brand founded by Selena Gomez, dedicated to promoting self-acceptance and mental health awareness through beauty.",
+        "country_of_origin": "USA"
+    },
+    {
+        "name": "AMUSE",
+        "logo": "amuse_logo.png",
+        "description": "AMUSE is a trendy and affordable beauty brand offering a wide range of makeup and skincare products.",
+        "country_of_origin": "South Korea"
+    },
+    {
+        "name": "ROUND LAB",
+        "logo": "round_lab_logo.png",
+        "description": "ROUND LAB is a Korean skincare brand known for its innovative formulations and use of natural ingredients.",
+        "country_of_origin": "South Korea"
+    },
+    {
+        "name": "BOBBI BROWN",
+        "logo": "bobbi_brown_logo.png",
+        "description": "BOBBI BROWN is a renowned makeup artist and cosmetics brand, offering high-quality makeup and skincare products.",
+        "country_of_origin": "USA"
+    },
+    {
+        "name": "DR. JART+",
+        "logo": "dr_jart_logo.png",
+        "description": "DR. JART+ is a Korean skincare brand known for its dermatologist-tested products and innovative skincare technology.",
+        "country_of_origin": "South Korea"
+    },
+    {
+        "name": "HEIMISH",
+        "logo": "heimish_logo.png",
+        "description": "HEIMISH is a Korean beauty brand offering gentle and effective skincare solutions suitable for all skin types.",
+        "country_of_origin": "South Korea"
+    },
+    {
+        "name": "DR. CEURACLE",
+        "logo": "dr_ceruacle_logo.png",
+        "description": "DR. CEURACLE is a dermatologist-developed skincare brand, specializing in products that target specific skin concerns.",
+        "country_of_origin": "South Korea"
+    },
+    {
+        "name": "KYLIE SKIN",
+        "logo": "kylie_skin_logo.png",
+        "description": "KYLIE SKIN is a skincare brand founded by Kylie Jenner, offering a range of skincare essentials designed to achieve healthy and glowing skin.",
+        "country_of_origin": "USA"
+    },
+    {
+        "name": "ΚΙΚΟ MILANO",
+        "logo": "kiko_milano_logo.png",
+        "description": "ΚΙΚΟ MILANO is an Italian cosmetics brand known for its high-quality and affordable makeup products, inspired by Milan's vibrant beauty scene.",
+        "country_of_origin": "Italy"
+    },
+    {
+        "name": "LA ROCHE-POSAY",
+        "logo": "la_roche_posay_logo.png",
+        "description": "LA ROCHE-POSAY is a French skincare brand recommended by dermatologists worldwide, offering a range of gentle and effective skincare solutions.",
+        "country_of_origin": "France"
+    },
+    {
+        "name": "HUXLEY",
+        "logo": "huxley_logo.png",
+        "description": "HUXLEY is a Korean skincare brand inspired by the minimalist beauty of the Sahara desert, offering luxurious and hydrating skincare products.",
+        "country_of_origin": "South Korea"
+    }
+]
