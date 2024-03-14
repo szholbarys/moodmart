@@ -8,8 +8,54 @@ import { Product } from "@/core/type/product.type";
 import { Promo } from "@/core/type/promo.type";
 import productsData from "../../../products.json";
 import { PromoCard } from "@/components/widgets/PromoCard";
+import BrandSection from "@/components/widgets/BrandSection";
 
 const products: Product[] = productsData as Product[];
+
+const products2: Product[] = [
+    {
+        id: '1',
+        name: 'FUNKY MONKEY longlasting lip pencil',
+        description: '',
+        category: 'уход за лицом',
+        rating: 4.5,
+        ratingCount: 122,
+        // oldPrice: 3441,
+        price: 3441,
+        isNew: true,
+        // discount: 66,
+        isHit: true,
+        image: "/images/product1.svg",
+    },
+    {
+        id: '2',
+        name: 'FUNKY MONKEY longlasting lip pencil',
+        description: '',
+        category: 'уход за лицом',
+        rating: 3.9,
+        ratingCount: 122,
+        // oldPrice: 3441,
+        price: 3441,
+        isNew: true,
+        // discount: 66,
+        isHit: true,
+        image: "/images/product2.svg",
+    },
+    {
+        id: '3',
+        name: 'FUNKY MONKEY longlasting lip pencil',
+        description: '',
+        category: 'уход за лицом',
+        rating: 4.7,
+        ratingCount: 122,
+        // oldPrice: 3441,
+        price: 3441,
+        isNew: true,
+        // discount: 66,
+        isHit: true,
+        image: "/images/product3.svg",
+    }
+]
 
 const slides: Slide[] = [
     {
@@ -98,22 +144,24 @@ export default function Home() {
                 <Carousel title="Новинки" slidesToShow={4} className="mb-16">
                     {products.map((product, index) => (
                         <div key={index}>
-                            <ProductCard product={product} />
+                            <ProductCard product={product} type="horizontal"/>
                         </div>
                     ))}
                 </Carousel>
                 <Carousel title="Хиты"  slidesToShow={4} className="mb-16">
                     {products.map((product, index) => (
                         <div key={index}>
-                            <ProductCard product={product} />
+                            <ProductCard product={product} type="horizontal"/>
                         </div>
                     ))}
                 </Carousel>
-                <Carousel title="Акции" slidesToShow={2}>
+                <Carousel title="Акции" slidesToShow={2} className="mb-16">
                         {promos.map((promo, index) => (
                             <PromoCard key={index} promo={promo} />
                         ))}
                 </Carousel>
+                <BrandSection brandName="Glossier" poster="/images/glossier.svg" direction="horizontal" products={products2} className="mb-16"/>
+                <BrandSection brandName="CLINIQUE" poster="/images/clinique.svg" direction="vertical" products={products2}/>
             </div>
         </>
 

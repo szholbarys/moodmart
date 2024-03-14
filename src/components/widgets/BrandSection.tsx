@@ -8,25 +8,23 @@ interface BrandProps {
     poster: string,
     direction: 'horizontal' | 'vertical',
     products: Product[],
-
+    className?: string,
 }
 
-const BrandSection: React.FC<BrandProps> = ({brandName, poster, direction, products}) => {
+const BrandSection: React.FC<BrandProps> = ({brandName, poster, direction, products, className}) => {
     return (
-        <div className="w-[84%]">
+        <div className={className}>
             <div className="flex mb-10">
                 <h2 className="text-h2 font-bold">{brandName}</h2>
                 <Button type="transparent">Перейти к бренду</Button>
             </div>
-            <div className="flex items-start">
+            <div className="flex items-start justify-between">
                 {direction === 'horizontal' && (
                     <img src={poster} alt={brandName} className="mr-20" />
                 )}
-                <div className={`flex justify-between w-full ${direction === 'vertical' ? 'flex-col' : 'flex-row'}`}>
+                <div className={`flex justify-between w-full  ${direction === 'vertical' ? 'flex-col' : 'flex-row'}`}>
                     {products.map((product, index) => (
-                        <div key={index}>
-                            <ProductCard className="w-[230px]" product={product} />
-                        </div>
+                        <ProductCard key={index} className={`${direction === 'horizontal' ? 'mr-6' : ''}`} product={product} type={direction}/>
                     ))}
                 </div>
                 {direction === 'vertical' && (
