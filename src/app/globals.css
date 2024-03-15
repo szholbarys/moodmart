@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .a-white {
+    @apply hover:text-white duration-200 ease-in-out cursor-pointer;
+  }
+}
 
 :root {
   --primary: #AB8677;
@@ -49,4 +54,9 @@ li.slick-active > div {
 /* the slides */
 .slick-slide {
   width: fit-content;
+}
+
+/* hover:transition duration-200 ease-in-out */
+.transition-colors {
+  transition: 200ms ease-in-out;
 }

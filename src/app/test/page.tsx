@@ -3,6 +3,7 @@ import { Product } from "@/core/type/product.type";
 import Brands from "@/components/widgets/Brands";
 import { Brand } from "@/core/type/brand.type";
 import brandsData from "../../../brands.json";
+import Footer from "@/components/widgets/Footer";
 
 
 // const products: Product[] = productsData as Product[];
@@ -56,6 +57,6 @@ const brands: Brand[] = brandsData as Brand[];
 
 export default function Test() {
     return (
-        <Brands brands={brands}/>
+        <Footer />
     )
 }

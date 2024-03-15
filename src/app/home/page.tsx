@@ -12,6 +12,7 @@ import BrandSection from "@/components/widgets/BrandSection";
 import Brands from "@/components/widgets/Brands";
 import { Brand } from "@/core/type/brand.type";
 import brandsData from "../../../brands.json";
+import Footer from "@/components/widgets/Footer";
 
 const products: Product[] = productsData as Product[];
 
@@ -145,7 +146,7 @@ export default function Home() {
         <>
             <HeroCarousel slides={slides} className="mb-14"/>
             <Stories stories={stories} className="mb-16"/>
-            <div className="mx-[80.5px]">
+            <div className="mx-[80.5px] mb-16">
                 <Carousel title="Новинки" slidesToShow={4} className="mb-16">
                     {products.map((product, index) => (
                         <div key={index}>
@@ -167,8 +168,9 @@ export default function Home() {
                 </Carousel>
                 <BrandSection brandName="Glossier" poster="/images/glossier.svg" direction="horizontal" products={products2} className="mb-16"/>
                 <BrandSection brandName="CLINIQUE" poster="/images/clinique.svg" direction="vertical" products={products2} className="mb-10"/>
-                <Brands brands={brands} cl/>
+                <Brands brands={brands} />
             </div>
+            <Footer />
         </>
 
     )

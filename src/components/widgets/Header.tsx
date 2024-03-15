@@ -46,23 +46,23 @@ export default function Header() {
       </nav>
       <ul className={`${styles.controls} flex items-center`}>
                 <li>
-                    <a href="#">
-                        <SearchIcon color="black" className={`group transition-colors ${isTransparent ? "hover:fill-white" : "hover:fill-primary"}`}/>
+                    <a href="#" className="group">
+                        <SearchIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <FavoriteIcon color="black"/>
+                    <a href="#" className="group">
+                        <FavoriteIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <ProfileIcon color="black"/>
+                    <a href="#" className="group">
+                        <ProfileIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:stroke-white" : "group-hover:stroke-primary"}`}/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <CartIcon color="black"/>
+                    <a href="#" className="group">
+                        <CartIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
                     </a>
                 </li>
             </ul>
