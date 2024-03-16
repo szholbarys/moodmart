@@ -7,36 +7,50 @@ import { FavoriteIcon } from "@/components/shared/icons/favoriteIcon";
 import { ProfileIcon } from "@/components/shared/icons/profileIcon";
 import { CartIcon } from "@/components/shared/icons/cartIcon";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
+import { SearchArea } from "./SearchArea";
 
 export default function Header() {
   const [isTransparent, setIsTransparent] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
+
+  // Toggles the search dropdown and ensures the header is not transparent when the search is open
+  const toggleSearch = () => {
+    setShowSearch(!showSearch);
+    // Ensure header becomes non-transparent when search is activated
+    if (!showSearch) {
+      setIsTransparent(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setIsTransparent(scrollTop === 0); // Update state based on scroll position
+      // Only update transparency based on scroll position if search is not shown
+      if (!showSearch) {
+        setIsTransparent(scrollTop === 0);
+      }
     };
 
-    // Add event listener on component mount
     window.addEventListener("scroll", handleScroll);
 
-    // Remove event listener on component unmount
+    // Cleanup function to remove the event listener
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Empty dependency array ensures the effect runs only once on mount
+  }, [showSearch]); // Add showSearch to the dependency array to re-bind the scroll event when it changes
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex justify-between items-center py-4 px-20 z-50 transition duration-500 ease-in-out ${
+      className={`w-full fixed top-0 left-0 pt-4 pb-1 px-20 z-50 transition duration-500 ease-in-out ${
         isTransparent ? "bg-transparent" : "bg-white"
       }`}
     >
-      {/* Rest of your header content */}
+      <div className=" flex justify-between items-center">
       <Image
         src={logo}
         alt="MoodMart Logo"
         width={100}
         height={53}
-      />
+        />
       <nav className={`${styles.navbar} flex justify-center ml-10 font-meduim`}>
       <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>каталог</a>
         <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>бренды</a>
@@ -46,26 +60,36 @@ export default function Header() {
       </nav>
       <ul className={`${styles.controls} flex items-center`}>
                 <li>
-                    <a href="#" className="group">
+                    <button className="group" onClick={toggleSearch}>
                         <SearchIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="#" className="group">
+                    <button className="group">
                         <FavoriteIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="#" className="group">
+                    <button className="group">
                         <ProfileIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:stroke-white" : "group-hover:stroke-primary"}`}/>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="#" className="group">
+                    <button className="group">
                         <CartIcon color="black" className={`transition-colors ${isTransparent ? "group-hover:fill-white" : "group-hover:fill-primary"}`}/>
-                    </a>
+                    </button>
                 </li>
             </ul>
+            </div>
+            <motion.div
+              className={`mt-4 flex justify-center items-center transition-all duration-500 ease-out ${showSearch ? "pb-4" : ""}`}
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              {showSearch && <SearchArea />}
+            </motion.div>
     </header>
   );
 }

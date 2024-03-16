@@ -46,17 +46,11 @@ li.slick-active > div {
 }
 
 /* Product carousel */
-
-.slick-list {
-  width: 100%!important;
-}
-
-/* the slides */
-.slick-slide {
-  width: fit-content;
-}
-
 /* hover:transition duration-200 ease-in-out */
 .transition-colors {
   transition: 200ms ease-in-out;
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
