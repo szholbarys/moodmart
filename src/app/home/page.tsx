@@ -12,7 +12,6 @@ import BrandSection from "@/components/widgets/BrandSection";
 import Brands from "@/components/widgets/Brands";
 import { Brand } from "@/core/type/brand.type";
 import brandsData from "../../../brands.json";
-import Footer from "@/components/widgets/Footer";
 
 const products: Product[] = productsData as Product[];
 
@@ -170,7 +169,6 @@ export default function Home() {
                 <BrandSection brandName="CLINIQUE" poster="/images/clinique.svg" direction="vertical" products={products2} className="mb-10"/>
                 <Brands brands={brands} />
             </div>
-            <Footer />
         </>
 
     )

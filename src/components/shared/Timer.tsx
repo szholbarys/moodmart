@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ClockIcon } from './icons/clockIcon';
 
 interface TimerProps {
@@ -13,24 +13,26 @@ const Timer: React.FC<TimerProps> = ({ seconds, className }) => {
         hours: '00',
         minutes: '00'
     });
+    
+    const secondsRef = useRef(seconds);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (seconds > 0) {
-                const days = Math.floor(seconds / (3600 * 24)).toString().padStart(2, '0');
-                const hours = Math.floor((seconds % (3600 * 24)) / 3600).toString().padStart(2, '0');
-                const minutes = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+        let interval: NodeJS.Timeout;
+
+        if (secondsRef.current > 0) {
+            interval = setInterval(() => {
+                const days = Math.floor(secondsRef.current / (3600 * 24)).toString().padStart(2, '0');
+                const hours = Math.floor((secondsRef.current % (3600 * 24)) / 3600).toString().padStart(2, '0');
+                const minutes = Math.floor((secondsRef.current % 3600) / 60).toString().padStart(2, '0');
 
                 setTime({ days, hours, minutes });
 
-                seconds -= 1;
-            } else {
-                clearInterval(interval);
-            }
-        }, 1000);
+                secondsRef.current -= 1;
+            }, 1000);
+        }
 
         return () => clearInterval(interval);
-    }, [seconds]);
+    }, []);
 
     return (
         <div className={`flex items-center bg-white w-fit px-3 py-2 ${className}`}>

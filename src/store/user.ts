@@ -18,6 +18,6 @@
 //         orders: [],
 //         favorites: []
 //     },
-//     setUser: (user) => set(() => ({user}))
+//     setUser: (user) => set(() => ({user})),
 // }))
 
