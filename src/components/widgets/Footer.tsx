@@ -1,6 +1,6 @@
 'use client'
-import Image from "next/image";
-import logo from "../../../public/moodmart.svg";
+// import Image from "next/image";
+// import logo from "../../../public/moodmart.svg";
 import { LogoSvg } from "../shared/LogoSvg";
 import { WhatsAppIcon } from "../shared/icons/whatsappIcon";
 import { useState, ChangeEvent } from "react";

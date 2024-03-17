@@ -7,12 +7,17 @@ import { FavoriteIcon } from "@/components/shared/icons/favoriteIcon";
 import { ProfileIcon } from "@/components/shared/icons/profileIcon";
 import { CartIcon } from "@/components/shared/icons/cartIcon";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
 import { SearchArea } from "./SearchArea";
 
 export default function Header() {
   const [isTransparent, setIsTransparent] = useState(true);
   const [showSearch, setShowSearch] = useState(false);
+
+  const searchQuery = (query: string) => {
+    query = query.toLowerCase();
+    return 
+  }
 
   // Toggles the search dropdown and ensures the header is not transparent when the search is open
   const toggleSearch = () => {
@@ -40,7 +45,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 pt-4 pb-1 px-20 z-50 transition duration-500 ease-in-out ${
+      className={`w-full fixed top-0 left-0 pt-4 pb-4 px-20 z-50 transition duration-300 ease-in-out ${
         isTransparent ? "bg-transparent" : "bg-white"
       }`}
     >
@@ -82,13 +87,15 @@ export default function Header() {
             </ul>
             </div>
             <motion.div
-              className={`mt-4 flex justify-center items-center transition-all duration-500 ease-out ${showSearch ? "pb-4" : ""}`}
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              {showSearch && <SearchArea />}
+              animate={{ opacity: 1, height: showSearch ? "auto" : 0}}
+              exit={{ opacity: 0, height: 0}}
+              transition={{ ease: "easeInOut", duration: 0.5 }}
+              style={{ overflow: "hidden" }}
+            > 
+              <div className={`mt-4 flex justify-center items-center pb-3`}>
+                <SearchArea />
+              </div>
             </motion.div>
     </header>
   );
