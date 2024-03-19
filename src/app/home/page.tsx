@@ -1,3 +1,4 @@
+'use client'
 import HeroCarousel from "@/components/widgets/HeroCarousel";
 import Carousel from "@/components/widgets/Carousel";
 import { ProductCard } from "@/components/widgets/ProductCard";
@@ -6,14 +7,16 @@ import { Slide } from "@/core/interfaces/slide.interface";
 import { Story } from "@/core/interfaces/story.interface";
 import { Product } from "@/core/type/product.type";
 import { Promo } from "@/core/type/promo.type";
-import productsData from "../../../products.json";
+// import productsData from "../../../products.json";
 import { PromoCard } from "@/components/widgets/PromoCard";
 import BrandSection from "@/components/widgets/BrandSection";
 import Brands from "@/components/widgets/Brands";
 import { Brand } from "@/core/type/brand.type";
 import brandsData from "../../../brands.json";
+import useProductStore from "@/store/product";
+import { useEffect } from "react";
 
-const products: Product[] = productsData as Product[];
+// const products: Product[] = productsData as Product[];
 
 const products2: Product[] = [
     {
@@ -141,6 +144,12 @@ const promos: Promo [] = [
 const brands: Brand[] = brandsData as Brand[];
 
 export default function Home() {
+    const { products, fetchProducts, loading, error } = useProductStore();
+
+    useEffect(() => {
+        fetchProducts();
+    }, []);
+
     return (
         <>
             <HeroCarousel slides={slides} className="mb-14"/>

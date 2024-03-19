@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { permanentRedirect } from "next/navigation";
 import { useEffect } from "react";
 
