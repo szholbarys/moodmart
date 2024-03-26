@@ -6,8 +6,10 @@ import { WhatsAppIcon } from "../shared/icons/whatsappIcon";
 import { useState, ChangeEvent } from "react";
 import { InstIcon } from "../shared/icons/instIcon";
 import { YouTubeIcon } from "../shared/icons/youtubeIcon";
+import { useRouter } from "next/navigation";
 
 const Footer: React.FC = () => {
+    const router = useRouter()
     const [phoneNumber, setPhoneNumber] = useState('');
     const [isValid, setIsValid] = useState(true);
 
@@ -22,7 +24,7 @@ const Footer: React.FC = () => {
         <div className="bg-black py-10 px-20">
             <div className="flex justify-between">
                 <div className="w-[15%]">
-                    <LogoSvg color="white" className="mb-10"/>
+                    <LogoSvg color="white" className="mb-10 cursor-pointer" onClick={() => {router.push('/home')}}/>
                     <p className="text-16px text-white font-bold">нужна консультация?</p>
                     <p className="text-16px text-grey whitespace-normal mb-5">наши специалисты ответят на любой вопрос</p>
                     <div className="flex items-center">

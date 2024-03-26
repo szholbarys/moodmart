@@ -7,17 +7,15 @@ import { FavoriteIcon } from "@/components/shared/icons/favoriteIcon";
 import { ProfileIcon } from "@/components/shared/icons/profileIcon";
 import { CartIcon } from "@/components/shared/icons/cartIcon";
 import { useState, useEffect } from "react";
-import { motion, useAnimationControls } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { SearchArea } from "./SearchArea";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
+  const router = useRouter();
+  const pathname = usePathname()
   const [isTransparent, setIsTransparent] = useState(true);
   const [showSearch, setShowSearch] = useState(false);
-
-  const searchQuery = (query: string) => {
-    query = query.toLowerCase();
-    return 
-  }
 
   // Toggles the search dropdown and ensures the header is not transparent when the search is open
   const toggleSearch = () => {
@@ -32,16 +30,24 @@ export default function Header() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       // Only update transparency based on scroll position if search is not shown
-      if (!showSearch) {
+      if (!showSearch && pathname === '/home') {
+        console.log(pathname)
         setIsTransparent(scrollTop === 0);
       }
     };
-
+    
     window.addEventListener("scroll", handleScroll);
-
     // Cleanup function to remove the event listener
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [showSearch]); // Add showSearch to the dependency array to re-bind the scroll event when it changes
+    
+  }, [showSearch, pathname]); // Add showSearch to the dependency array to re-bind the scroll event when it changes
+  
+  useEffect(() => {
+    // Check if the current page is the home page ("/")
+    setIsTransparent(pathname === '/home' && !showSearch);
+    // console.log(showSearch);
+    
+  }, [pathname]);
 
   return (
     <header
@@ -55,6 +61,8 @@ export default function Header() {
         alt="MoodMart Logo"
         width={100}
         height={53}
+        onClick={() => {router.push('/home')}}
+        className="cursor-pointer"
         />
       <nav className={`${styles.navbar} flex justify-center ml-10 font-meduim`}>
       <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>каталог</a>

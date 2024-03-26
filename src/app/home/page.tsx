@@ -146,10 +146,6 @@ const brands: Brand[] = brandsData as Brand[];
 export default function Home() {
     const { products, fetchProducts, loading, error } = useProductStore();
 
-    useEffect(() => {
-        fetchProducts();
-    }, []);
-
     return (
         <>
             <HeroCarousel slides={slides} className="mb-14"/>

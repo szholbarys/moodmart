@@ -1,3 +1,4 @@
+// "use client"
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: "MoodMart",
   description: "Косметика для всех",
   icons: {
-    icon: '/images/icon.png',
+    icon: 'favicon.ico',
   }
 };
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const { fetchProducts } = useProductStore();
   return (
     <html lang="en">
       <body>

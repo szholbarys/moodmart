@@ -8,6 +8,9 @@
   .a-white {
     @apply hover:text-white duration-200 ease-in-out cursor-pointer;
   }
+  .primary-hover {
+    @apply hover:text-primary duration-200 ease-in-out cursor-pointer;
+  }
 }
 
 :root {
