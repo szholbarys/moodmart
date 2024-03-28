@@ -8,7 +8,6 @@ export default function Home() {
 
   useEffect(() => {
     fetchProducts();
-    
     permanentRedirect("/home");
   }, []);
 

@@ -2,8 +2,18 @@
 import { FilterIcon } from '@/components/shared/icons/filterIcon';
 import { useRouter, useSearchParams } from 'next/navigation';
 import useProductStore from '@/store/product';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { Product } from '@/core/type/product.type';
+import DropdownMenu from '@/components/shared/Dropdown';
+import { ProductCard } from '@/components/widgets/ProductCard';
+
+const sortingOptions = [
+    { label: 'по новизне', value: 'by_date' },
+    { label: 'по возрастанию', value: 'by_asc' },
+    { label: 'по убыванию', value: 'by_desc' },
+    { label: 'по рейтингу', value: 'by_rating' },
+    { label: 'по популярности', value: 'by_popularity' }
+];
 
 const SearchResultsPage: React.FC = () => {
     const router = useRouter();
@@ -25,7 +35,7 @@ const SearchResultsPage: React.FC = () => {
       }, [query, products]);
 
     return (
-        <div className='mt-40 mx-20 h-screen'>
+        <div className={`mt-40 mx-20 ${filteredProducts.length === 0 ? 'h-screen' : 'h-full'}`}>
             <div className='flex flex items-center'>
                 <p>результаты по запросу:</p>
                 <h2 className='ml-4 text-h2 font-bold'>{query}</h2>
@@ -35,15 +45,22 @@ const SearchResultsPage: React.FC = () => {
                     Ничего не найдено. Попробуйте изменить запрос и мы поищем ещё раз.
                 </div>
             ) : (
-            <div>
-                <div className='flex items-center'>
-                    <FilterIcon color='var(--black)'/>
-                    <button className='ml-1 text-18px font-bold primary-hover'>фильтр</button>
-                    <p className='mx-6'>|</p>
-                    <p>{filteredProducts.length} продуктов</p>
+            <Fragment>
+                <div className='flex items-start font-sans justify-between'>
+                    <div className='flex items-center'>
+                        <FilterIcon color='var(--black)'/>
+                        <button className='ml-1 font-bold primary-hover'>фильтр</button>
+                        <p className='mx-6'>|</p>
+                        <p>{filteredProducts.length} продуктов</p>
+                    </div>
+                    <DropdownMenu options={sortingOptions}/>
                 </div>
-                
-            </div>
+                <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
+                    {products.map((product, index) => (
+                        <ProductCard product={product} type='horizontal'/>
+                    ))}
+                </div>
+            </Fragment>    
             )}
         </div>
     )
