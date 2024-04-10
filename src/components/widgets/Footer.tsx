@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         <div className="bg-black py-10 px-20">
             <div className="flex justify-between">
                 <div className="w-[15%]">
-                    <LogoSvg color="white" className="mb-10 cursor-pointer" onClick={() => {router.push('/home')}}/>
+                    <LogoSvg color="white" className="mb-10 cursor-pointer" onClick={() => {router.push('/')}}/>
                     <p className="text-16px text-white font-bold">нужна консультация?</p>
                     <p className="text-16px text-grey whitespace-normal mb-5">наши специалисты ответят на любой вопрос</p>
                     <div className="flex items-center">

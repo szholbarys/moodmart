@@ -43,6 +43,20 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options }) => {
         router.push(url);
     };
 
+    const handleDropdownMenu = () => {
+      setTimeout(() => {
+          const element = document.querySelector('.Dropdown-menu');
+          console.log(element);
+          // Check if the element exists before adding the class
+          if (element) {
+              // Add a class to trigger the transition
+              element.classList.remove('opacity-0');
+              element.classList.add('opacity-100');
+          }
+      }, 50);
+    };
+  
+
     return (
       <Dropdown
         className="w-fit cursor-pointer"
@@ -52,8 +66,9 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options }) => {
         placeholderClassName='primary-hover'
         value={selectedOption?.value} // Set the selected option
         controlClassName="flex pl-4"
-        menuClassName="absolute z-50 bg-white p-4 shadow-xl"
+        menuClassName="absolute z-50 bg-white p-4 shadow-xl opacity-0 transition-opacity ease-in duration-300"
         onChange={handleDropdownChange}
+        onFocus={handleDropdownMenu}
       />
     );
 };

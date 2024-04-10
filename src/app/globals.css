@@ -83,27 +83,3 @@ textarea:focus, input:focus{
 .arrow-open.rotate-180 {
   transform: rotate(180deg); /* Rotate the arrow icon by 180 degrees */
 }
-
-.Dropdown-menu {
-  opacity: 0; /* Initially, set opacity to 0 */
-  max-height: 0; /* Initially, set max-height to 0 */
-  overflow: hidden; /* Hide overflowing content */
-  animation: fadeIn 0.3s ease forwards; /* Apply fadeIn animation */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start with opacity 0 */
-    max-height: 0; /* Start with max-height 0 */
-  }
-  to {
-    opacity: 1; /* End with opacity 1 */
-    max-height: 200px; /* End with max-height to reveal content */
-  }
-}
-
-.Dropdown-menu[aria-expanded="true"] {
-  animation: none; /* Disable the fadeIn animation when aria-expanded is true */
-  opacity: 1; /* Set opacity to 1 when expanded */
-  max-height: 200px; /* Set max-height to reveal content */
-}

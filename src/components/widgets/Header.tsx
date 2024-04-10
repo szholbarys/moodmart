@@ -30,8 +30,7 @@ export default function Header() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       // Only update transparency based on scroll position if search is not shown
-      if (!showSearch && pathname === '/home') {
-        console.log(pathname)
+      if ((!showSearch && (pathname.startsWith('') || pathname.startsWith('/catalog')))) {
         setIsTransparent(scrollTop === 0);
       }
     };
@@ -44,7 +43,7 @@ export default function Header() {
   
   useEffect(() => {
     // Check if the current page is the home page ("/")
-    setIsTransparent(pathname === '/home' && !showSearch);
+    setIsTransparent((pathname.startsWith('') || pathname.startsWith('/catalog')) && !showSearch);
     // console.log(showSearch);
     
   }, [pathname]);
@@ -61,15 +60,15 @@ export default function Header() {
         alt="MoodMart Logo"
         width={100}
         height={53}
-        onClick={() => {router.push('/home')}}
+        onClick={() => {router.push('/')}}
         className="cursor-pointer"
         />
       <nav className={`${styles.navbar} flex justify-center ml-10 font-meduim`}>
-      <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>каталог</a>
-        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>бренды</a>
-        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>новинки</a>
-        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>акции</a>
-        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`}>подарочные карты</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`} onClick={() => {router.push('/catalog')}}>каталог</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`} onClick={() => {router.push('/')}}>бренды</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`} onClick={() => {router.push('/')}}>новинки</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`} onClick={() => {router.push('/')}}>акции</a>
+        <a href="#" className={`transition-colors ${isTransparent ? 'hover:text-white' : 'hover:text-primary'}`} onClick={() => {router.push('/')}}>подарочные карты</a>
       </nav>
       <ul className={`${styles.controls} flex items-center`}>
                 <li>
