@@ -7,6 +7,8 @@ import { Fragment } from "react";
 import { ProductCard } from "@/components/widgets/ProductCard";
 import Slider from "react-slick";
 import CategoryCard, { CategoryCardProps } from "@/components/shared/CategoryCard";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const categories:CategoryCardProps[] = [
     {
