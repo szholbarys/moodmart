@@ -3,4 +3,5 @@ export type IconType = {
     color: string;
     className?: string;
     onClick?: React.MouseEventHandler<SVGSVGElement>;
+    strokeWidth?: number;
 }

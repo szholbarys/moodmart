@@ -32,7 +32,6 @@ const useProductStore = create<ProductStore>()(
                     if (!data || data.length === 0) {
                         throw new Error("No products found");
                     }
-                    console.log(data.record);
                     
                     set({ products: data.record, loading: false });
                 } catch (error) {

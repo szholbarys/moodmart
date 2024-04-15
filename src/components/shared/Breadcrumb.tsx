@@ -40,10 +40,6 @@ const Breadcrumb = () => {
 
   breadcrumbs.unshift({ label: 'главная', href: '/' });
 
-  useEffect(() => {
-    console.log(pathSegments)
-  }, [breadcrumbs]);
-
   return (
     <div>
       {breadcrumbs.map((breadcrumb, index) => (

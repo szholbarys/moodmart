@@ -3,7 +3,7 @@ import { FilterIcon } from "../shared/icons/filterIcon";
 import DropdownMenu from "../shared/Dropdown";
 // import { Product } from "@/core/type/product.type";
 import { useSearchParams } from "next/navigation";
-import FilterDrawer from "./FilterDrawer";
+import FilterDrawer from "../shared/FilterDrawer";
 import { useState } from "react";
 
 const sortingOptions = [

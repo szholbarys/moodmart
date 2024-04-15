@@ -30,7 +30,7 @@ export default function Header() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       // Only update transparency based on scroll position if search is not shown
-      if ((!showSearch && (pathname.startsWith('') || pathname.startsWith('/catalog')))) {
+      if ((!showSearch && (pathname.length === 1 || pathname.startsWith('/catalog') || pathname.startsWith('/#')))) {
         setIsTransparent(scrollTop === 0);
       }
     };
@@ -43,7 +43,7 @@ export default function Header() {
   
   useEffect(() => {
     // Check if the current page is the home page ("/")
-    setIsTransparent((pathname.startsWith('') || pathname.startsWith('/catalog')) && !showSearch);
+    setIsTransparent((pathname.length === 1 || pathname.startsWith('/catalog') || pathname.startsWith('/')) && !showSearch);
     // console.log(showSearch);
     
   }, [pathname]);

@@ -83,3 +83,7 @@ textarea:focus, input:focus{
 .arrow-open.rotate-180 {
   transform: rotate(180deg); /* Rotate the arrow icon by 180 degrees */
 }
+
+.max-h-inherit {
+  max-height: inherit;
+}

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Raleway", "sans-serif"]
+        sans: ["Raleway", "sans-serif"],
+        serif: ["Mulish", "sans-serif"],
       },
       colors: {
         primary: "#AB8677",
@@ -27,6 +28,7 @@ const config: Config = {
         "16px": "16px",
         "18px": "18px",
         "20px": "20px",
+        "22px": "22px",
         "24px": "24px",
         "h1": "60px",
         "h2": "40px",
