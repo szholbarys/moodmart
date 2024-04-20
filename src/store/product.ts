@@ -9,6 +9,7 @@ type ProductStore = {
     fetchProducts: () => Promise<void>;
     loading: boolean;
     error: string | null;
+    findProductById: (id: string) => Product | undefined;
 }
 
 const useProductStore = create<ProductStore>()(
@@ -39,7 +40,12 @@ const useProductStore = create<ProductStore>()(
                     set({ error: (error as Error).message, loading: false });
                 }
             },
+            findProductById: (id: string) => {
+                const product = get().products.find((product) => product.id === id);
+                return product;
+            },
         }),
+        
         {
             name: "product-storage", // name of the item in the storage (must be unique)
             storage: createJSONStorage<ProductStore>(() => sessionStorage),

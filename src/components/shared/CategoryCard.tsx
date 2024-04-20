@@ -8,7 +8,7 @@ export interface CategoryCardProps {
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ image, title, quantity }) => {
     return (
-        <div className="w-fit flex items-center pl-5 rounded-3xl border-solid border-2 border-light_grey hover:border-black duration-300 cursor-pointer">
+        <div className="w-fit flex items-center pl-5 rounded-3xl border-solid border-2 border-light_grey hover:border-primary duration-300 cursor-pointer">
             <Image 
                 src={image}
                 width={64}

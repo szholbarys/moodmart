@@ -10,5 +10,6 @@ export type Product = {
     isNew: boolean;
     discount?: number;
     isHit: boolean;
-    image: string;
+    cover: string;
+    images?: string[]
 }

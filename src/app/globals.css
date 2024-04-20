@@ -87,3 +87,22 @@ textarea:focus, input:focus{
 .max-h-inherit {
   max-height: inherit;
 }
+
+.category-item input[type="checkbox"] {
+    accent-color: black;
+    width: 16px;
+    height: 16px;
+    border-radius: 0em;
+}
+
+.category-item span .partial::after {
+    content: "—"; /* En dash for a more aesthetic dash, but you can use "-" for a simple dash */
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;  /* Adjust this based on your actual checkbox size */
+    pointer-events: none;
+}
+
