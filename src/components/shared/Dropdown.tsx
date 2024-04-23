@@ -58,7 +58,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options }) => {
   
 
     return (
-      <Suspense>
+      <Suspense fallback={<p>Загрузка...</p>}>
         <Dropdown
           className="w-fit cursor-pointer"
           arrowClosed={<BotIcon className="arrow-open" color="var(--black)" />}

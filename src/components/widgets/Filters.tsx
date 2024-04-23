@@ -28,7 +28,7 @@ const Filters: React.FC<FiltersProps> = ({ quantity, className = '' }) => {
     };
 
     return (
-        <Suspense>
+        <Suspense fallback={<p>Загрузка...</p>}>
             <div className={`flex items-start font-sans justify-between ${className}`}>
                 <div className='flex items-center'>
                     <FilterIcon color='var(--black)'/>

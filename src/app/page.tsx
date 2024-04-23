@@ -16,86 +16,7 @@ import { Brand } from "@/core/type/brand.type";
 import brandsData from "../../brands.json"
 import useProductStore from "@/store/product";
 
-const products2: Product[] = [
-  {
-    "id": "1",
-    "name": "UNLEASHIA Glacier Vegan Lip Balm No.1 Blue Lagoon",
-    "description": "",
-    "category": "уход за лицом",
-    "rating": 4.5,
-    "ratingCount": 122,
-    "oldPrice": 3441,
-    "price": 3441,
-    "isNew": true,
-    "discount": 66,
-    "isHit": true,
-    "cover": "/images/product1.svg",
-    "images": [
-      "/images/product1.svg",
-      "/images/product1.svg",
-      "/images/product1.svg",
-      "/images/product1.svg",
-      "/images/product1.svg",
-      "/images/product1.svg"
-    ],
-    "volumes": [
-      30,
-      10
-    ]
-  },
-  {
-    "id": "2",
-    "name": "UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon",
-    "description": "",
-    "category": "уход за лицом",
-    "rating": 3.9,
-    "ratingCount": 122,
-    "oldPrice": 3441,
-    "price": 3441,
-    "isNew": true,
-    "discount": 66,
-    "isHit": true,
-    "cover": "/images/product2.svg",
-    "images": [
-      "/images/product2.svg",
-      "/images/product2.svg",
-      "/images/product2.svg",
-      "/images/product2.svg",
-      "/images/product2.svg",
-      "/images/product2.svg"
-    ],
-    "volumes": [
-      30,
-      10
-    ]
-  },
-  {
-    "id": "3",
-    "name": "UNLEASHIA Glacier Vegan Lip Balm No.3 Blue Lagoon",
-    "description": "",
-    "category": "уход за лицом",
-    "rating": 4.7,
-    "ratingCount": 122,
-    "oldPrice": 3441,
-    "price": 3441,
-    "isNew": true,
-    "discount": 66,
-    "isHit": true,
-    "cover": "/images/product3.svg",
-    "images": [
-      "/images/product3.svg",
-      "/images/product3.svg",
-      "/images/product3.svg",
-      "/images/product3.svg",
-      "/images/product3.svg",
-      "/images/product3.svg"
-    ],
-    "volumes": [
-      30,
-      10
-    ]
-  }
-]
+
 
 const slides: Slide[] = [
   {
@@ -183,7 +104,12 @@ export default function Home() {
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  });
+
+  const products2: Product[] = []
+  products2.push(products[0])
+  products2.push(products[1])
+  products2.push(products[2])
 
   return (
     <>
