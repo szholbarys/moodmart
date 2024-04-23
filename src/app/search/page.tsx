@@ -1,3 +1,4 @@
+'use client'
 import { useRouter, useSearchParams } from 'next/navigation';
 import useProductStore from '@/store/product';
 import { useState, useEffect, Fragment, Suspense } from 'react';
