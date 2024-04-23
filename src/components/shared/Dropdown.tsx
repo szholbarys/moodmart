@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Dropdown, { Option } from 'react-dropdown';
 import { BotIcon } from './icons/botIcon';
 import { usePathname, useSearchParams, useRouter } from 'next/navigation';
@@ -58,18 +58,20 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options }) => {
   
 
     return (
-      <Dropdown
-        className="w-fit cursor-pointer"
-        arrowClosed={<BotIcon className="arrow-open" color="var(--black)" />}
-        arrowOpen={<BotIcon className="arrow-closed rotate-180" color="var(--black)" />}
-        options={options}
-        placeholderClassName='primary-hover'
-        value={selectedOption?.value} // Set the selected option
-        controlClassName="flex pl-4"
-        menuClassName="absolute z-50 bg-white p-4 shadow-xl opacity-0 transition-opacity ease-in duration-300"
-        onChange={handleDropdownChange}
-        onFocus={handleDropdownMenu}
-      />
+      <Suspense>
+        <Dropdown
+          className="w-fit cursor-pointer"
+          arrowClosed={<BotIcon className="arrow-open" color="var(--black)" />}
+          arrowOpen={<BotIcon className="arrow-closed rotate-180" color="var(--black)" />}
+          options={options}
+          placeholderClassName='primary-hover'
+          value={selectedOption?.value} // Set the selected option
+          controlClassName="flex pl-4"
+          menuClassName="absolute z-50 bg-white p-4 shadow-xl opacity-0 transition-opacity ease-in duration-300"
+          onChange={handleDropdownChange}
+          onFocus={handleDropdownMenu}
+          />
+      </Suspense>
     );
 };
 

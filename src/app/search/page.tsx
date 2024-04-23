@@ -2,7 +2,7 @@
 import { FilterIcon } from '@/components/shared/icons/filterIcon';
 import { useRouter, useSearchParams } from 'next/navigation';
 import useProductStore from '@/store/product';
-import { useState, useEffect, Fragment } from 'react';
+import { useState, useEffect, Fragment, Suspense } from 'react';
 import { Product } from '@/core/type/product.type';
 import DropdownMenu from '@/components/shared/Dropdown';
 import { ProductCard } from '@/components/widgets/ProductCard';
@@ -37,30 +37,32 @@ const SearchResultsPage: React.FC = () => {
       }, [searchQuery, products]);
 
     return (
-        <div className={`mt-40 mx-20 ${filteredProducts.length === 0 ? 'h-screen' : 'h-full'}`}>
-            <div className='flex flex items-center'>
-                <p>результаты по запросу:</p>
-                <h2 className='ml-4 text-h2 font-bold'>{searchQuery}</h2>
-            </div>
-            {filteredProducts.length === 0 ? (
-                <div className='text-20px mt-10'>
-                    Ничего не найдено. Попробуйте изменить запрос и мы поищем ещё раз.
+        <Suspense>
+            <div className={`mt-40 mx-20 ${filteredProducts.length === 0 ? 'h-screen' : 'h-full'}`}>
+                <div className='flex flex items-center'>
+                    <p>результаты по запросу:</p>
+                    <h2 className='ml-4 text-h2 font-bold'>{searchQuery}</h2>
                 </div>
-            ) : (
-            <Fragment>
-                <Filters quantity={filteredProducts.length}/>
-                <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
-                    {filteredProducts.map((product, index) => (
-                        <ProductCard 
+                {filteredProducts.length === 0 ? (
+                    <div className='text-20px mt-10'>
+                        Ничего не найдено. Попробуйте изменить запрос и мы поищем ещё раз.
+                    </div>
+                ) : (
+                    <Fragment>
+                    <Filters quantity={filteredProducts.length}/>
+                    <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
+                        {filteredProducts.map((product, index) => (
+                            <ProductCard 
                             product={product} 
                             type='horizontal'
                             key={index}
-                        />
-                    ))}
-                </div>
-            </Fragment>     
-            )}
-        </div>
+                            />
+                        ))}
+                    </div>
+                </Fragment>     
+                )}
+            </div>
+        </Suspense>
     )
 }
 

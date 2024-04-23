@@ -4,7 +4,7 @@ import DropdownMenu from "../shared/Dropdown";
 // import { Product } from "@/core/type/product.type";
 import { useSearchParams } from "next/navigation";
 import FilterDrawer from "../shared/FilterDrawer";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 const sortingOptions = [
     { label: 'по новизне', value: 'by_date' },
@@ -28,16 +28,18 @@ const Filters: React.FC<FiltersProps> = ({ quantity, className = '' }) => {
     };
 
     return (
-        <div className={`flex items-start font-sans justify-between ${className}`}>
-            <div className='flex items-center'>
-                <FilterIcon color='var(--black)'/>
-                <button onClick={toggleDrawer} className='ml-1 font-bold primary-hover'>фильтр</button>
-                <FilterDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer}/>
-                <p className='mx-6'>|</p>
-                <p>{quantity} продуктов</p>
+        <Suspense>
+            <div className={`flex items-start font-sans justify-between ${className}`}>
+                <div className='flex items-center'>
+                    <FilterIcon color='var(--black)'/>
+                    <button onClick={toggleDrawer} className='ml-1 font-bold primary-hover'>фильтр</button>
+                    <FilterDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer}/>
+                    <p className='mx-6'>|</p>
+                    <p>{quantity} продуктов</p>
+                </div>
+                <DropdownMenu options={sortingOptions}/>
             </div>
-            <DropdownMenu options={sortingOptions}/>
-        </div>
+        </Suspense>
     )
 }
 
