@@ -57,6 +57,7 @@ const CatalogPage: React.FC = () => {
                 <Slider className="mt-8 flex" {...settings}>
                     {categories.map((category, index) => (
                         <CategoryCard 
+                            key={index}
                             image={category.image}
                             title={category.title}
                             quantity={category.quantity}

@@ -51,7 +51,11 @@ const SearchResultsPage: React.FC = () => {
                 <Filters quantity={filteredProducts.length}/>
                 <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
                     {filteredProducts.map((product, index) => (
-                        <ProductCard product={product} type='horizontal'/>
+                        <ProductCard 
+                            product={product} 
+                            type='horizontal'
+                            key={index}
+                        />
                     ))}
                 </div>
             </Fragment>     
