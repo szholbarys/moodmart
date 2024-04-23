@@ -14,7 +14,7 @@ const sortingOptions = [
     { label: 'по популярности', value: 'by_popularity' }
 ];
 
-const SearchResultsPage: React.FC = () => {
+const SearchResults: React.FC = () => {
     const router = useRouter();
     const searchQuery = useSearchParams().get("q"); 
     const filterQuery = useSearchParams().get("f");
@@ -45,22 +45,28 @@ const SearchResultsPage: React.FC = () => {
                 </div>
             ) : (
                 <Fragment>
-                    <Filters quantity={filteredProducts.length}/>
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
-                            {filteredProducts.map((product, index) => (
-                                <ProductCard 
-                                    product={product} 
-                                    type='horizontal'
-                                    key={index}
-                                />
-                            ))}
-                        </div>
+                    <Suspense fallback={<div className="animate-pulse w-36 h-3 bg-light_grey"></div>}>
+                        <Filters className="mt-8" quantity={filteredProducts.length}/>
                     </Suspense>
+                    <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
+                        {filteredProducts.map((product, index) => (
+                            <ProductCard 
+                            product={product} 
+                            type='horizontal'
+                            key={index}
+                            />
+                        ))}
+                    </div>
                 </Fragment>     
             )}
         </div>
     );
 };
 
-export default SearchResultsPage;
+export default function SearchResultsPage () {
+    return (
+        <Suspense fallback={<div className='my-40 mx-20 h-screen animate-pulse bg-light_grey'></div>}>
+            <SearchResults />
+        </Suspense>
+    )
+}

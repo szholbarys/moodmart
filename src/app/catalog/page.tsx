@@ -3,7 +3,7 @@ import Banner from "@/components/widgets/Banner";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import Filters from "@/components/widgets/Filters";
 import useProductStore from "@/store/product";
-import { Fragment } from "react";
+import { Fragment, Suspense } from "react";
 import { ProductCard } from "@/components/widgets/ProductCard";
 import Slider from "react-slick";
 import CategoryCard, { CategoryCardProps } from "@/components/shared/CategoryCard";
@@ -65,7 +65,9 @@ const CatalogPage: React.FC = () => {
                     ))}
                 </Slider>
                 <Fragment>
-                    <Filters className="mt-8" quantity={products.length}/>
+                    <Suspense fallback={<div className="animate-pulse w-36 h-3"></div>}>
+                        <Filters className="mt-8" quantity={products.length}/>
+                    </Suspense>
                     <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
                         {products.map((product, index) => (
                             <ProductCard 
