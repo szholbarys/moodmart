@@ -55,7 +55,7 @@ const Carousel:React.FC<CarouselProps> = ({ title, slidesToShow, className, chil
           <div className="flex items-baseline justify-between mb-10">
             <h2 className="text-h2 font-bold">{title}</h2>
             <div>
-              <button onClick={() => !prevButtonDisabled && slider?.current?.slickPrev()} disabled={prevButtonDisabled}><PrevArrowIcon color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
+              <button onClick={() => !prevButtonDisabled && slider?.current?.slickPrev()} disabled={prevButtonDisabled}><PrevArrowIcon size={32} color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
               <button className="ml-3" onClick={() => !nextButtonDisabled && slider?.current?.slickNext()} disabled={nextButtonDisabled}><ArrowIcon size={32} color={nextButtonDisabled ? "var(--grey)" : "var(--black)"} /></button>
             </div>
           </div>

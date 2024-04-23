@@ -1,44 +1,49 @@
 'use client'
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { FC } from 'react';
 
 interface Breadcrumb {
-  label: string;
+  label?: string;
   href: string;
 }
 
-const Breadcrumb = () => {
+interface BreadcrumbProps {
+  customBreadcrumbs?: Breadcrumb[]
+}
+
+const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs }) => {
   const router = useRouter();
   const pathname = usePathname();
   const pathSegments = pathname.split('/').filter(Boolean); // Split pathname into segments
 
+  let breadcrumbs: Breadcrumb[] 
   // Define known segments with custom hrefs
-  const knownSegments: Breadcrumb[] = [
-    {
-      label: "уход для лица",
-      href: "skincare"
-    },
-    {
-      label: "очищение и демакияж",
-      href: "cleansing-and-makeup-removal"
-    },
-    {
-      label: "каталог",
-      href: "catalog"
-    }
-  ];
+  if (customBreadcrumbs && customBreadcrumbs.length > 0) {
+    breadcrumbs = customBreadcrumbs; // Use custom breadcrumbs if provided
+    breadcrumbs.unshift({ label: 'главная', href: '/' });
+    console.log(breadcrumbs)
+  } else {
+    // Define known segments with custom hrefs
+    const knownSegments: Breadcrumb[] = [
+      {
+        label: "уход для лица",
+        href: "skincare"
+      },
+      {
+        label: "очищение и демакияж",
+        href: "cleansing-and-makeup-removal"
+      },
+      {
+        label: "каталог",
+        href: "catalog"
+      }
+    ];
 
-  // Generate breadcrumbs from path segments
-  const breadcrumbs: Breadcrumb[] = pathSegments.map(segment => {
-    const knownSegment = knownSegments.find(item => item.href === segment);
-    if (knownSegment) {
-      return knownSegment;
-    } else {
-      return { label: segment, href: '' }; // If segment not found in knownSegments, use segment as label
-    }
-  })
+    // Generate breadcrumbs from path segments
+    breadcrumbs = knownSegments.filter(segment => pathSegments.includes(segment.href));
+    breadcrumbs.unshift({ label: 'главная', href: '/' });
+  }
 
-  breadcrumbs.unshift({ label: 'главная', href: '/' });
 
   return (
     <div>

@@ -43,7 +43,10 @@ export default function Header() {
   
   useEffect(() => {
     // Check if the current page is the home page ("/")
-    setIsTransparent((pathname.length === 1 || pathname.startsWith('/catalog') || pathname.startsWith('/')) && !showSearch);
+    setIsTransparent((pathname.length === 1 || pathname.startsWith('/catalog') || pathname.startsWith('/#')) && !showSearch);
+    if(showSearch) {
+      toggleSearch();
+    }
     // console.log(showSearch);
     
   }, [pathname]);

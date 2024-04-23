@@ -31,7 +31,7 @@ export const SearchArea: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center border">
+    <div className="flex items-center border focus-within:border-primary">
       <SearchIcon color="var(--grey)" />
       <input
         ref={inputRef}
