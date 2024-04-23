@@ -68,7 +68,11 @@ const CatalogPage: React.FC = () => {
                     <Filters className="mt-8" quantity={products.length}/>
                     <div className='grid 2xl:grid-cols-5 gap-x-8 gap-y-8 my-10 xl:grid-cols-4'>
                         {products.map((product, index) => (
-                            <ProductCard product={product} type='horizontal'/>
+                            <ProductCard 
+                                key={index} 
+                                product={product} 
+                                type='horizontal'
+                            />
                         ))}
                     </div>
                 </Fragment>
