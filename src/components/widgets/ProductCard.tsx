@@ -55,7 +55,7 @@ export const ProductCard:React.FC<ProductProps> = ( { product, className, type =
                         width={type === "vertical" ? 200 : 302}
                         height={type === "vertical" ? 100 : 340}
                         alt={product.name}
-                        />
+                    />
                     <Fragment>
                         <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
                             {product.isNew && 
@@ -75,7 +75,7 @@ export const ProductCard:React.FC<ProductProps> = ( { product, className, type =
                     </Fragment>
                 </div>
                 <div onClick={() => {router.push(`/product/${product.id}`)}} className="cursor-pointer">
-                    <p className="text-18px font-meduim mb-4 group-hover:text-primary hover:transition duration-200 ease-in-out">{product.category}</p>
+                    <p className="text-18px font-meduim mt-6 mb-4 group-hover:text-primary hover:transition duration-200 ease-in-out">{product.category}</p>
                     <h3 className="text-18px font-bold mb-3.5 group-hover:text-primary hover:transition duration-200 ease-in-out">{product.name}</h3>
                     <div className="flex items-center mb-6">
                         <StarRating rating={product.rating}/>

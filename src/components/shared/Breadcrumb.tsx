@@ -21,7 +21,6 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs }) => {
   if (customBreadcrumbs && customBreadcrumbs.length > 0) {
     breadcrumbs = customBreadcrumbs; // Use custom breadcrumbs if provided
     breadcrumbs.unshift({ label: 'главная', href: '/' });
-    console.log(breadcrumbs)
   } else {
     // Define known segments with custom hrefs
     const knownSegments: Breadcrumb[] = [
@@ -48,7 +47,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs }) => {
   return (
     <div>
       {breadcrumbs.map((breadcrumb, index) => (
-        <span key={breadcrumb.href}>
+        <span key={index}>
             <a className='font-sans cursor-pointer primary-hover text-18px' onClick={() => router.push(`/${breadcrumb.href}`)}>{breadcrumb.label}</a>
             <span className='mx-1'> 
               {index < breadcrumbs.length - 1 && ' / '}

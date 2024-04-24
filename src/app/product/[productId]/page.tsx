@@ -1,27 +1,29 @@
 'use client'
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import PhotoCarousel from "@/components/widgets/PhotoCarousel";
-import { Product } from "@/core/type/product.type";
 import useProductStore from "@/store/product";
 import Button from "@/components/shared/Button";
-import { FC } from "react";
 import { StarRating } from "@/components/shared/StarRating";
 import VolumePicker from "@/components/shared/VolumePicker";
 import { HeartIcon } from "@/components/shared/icons/heartIcon";
+import ShadesDropdown from "@/components/shared/ShadesDropdown";
+import ProductInfo from "@/components/widgets/ProductInfo";
 
 export default function ProductPage({ params }: { params: { productId: string } }) {
     const { findProductById } = useProductStore();
     const product = findProductById(params.productId as string);
+    console.log(product);
     const breadcrumbs: Breadcrumb[] = [
         {
             label: product?.category,
             href: "/"
         }
     ]
+ 
 
     if (!product) {
         return (
-          <div className="mt-20 mx-[80.5px] mb-[60px]" >
+          <div className="mt-20 mx-[80.5px] mb-[60px]" suppressHydrationWarning={true}>
             <Breadcrumb />
             <div className="skeleton-loading h-5/6 animate-pulse mt-4 flex">
               <div className="h-96 w-1/2 bg-light_grey mr-12"></div>
@@ -44,7 +46,7 @@ export default function ProductPage({ params }: { params: { productId: string } 
     }
 
     return (
-        <div className="mt-20 mx-[80.5px] mb-[60px]" suppressHydrationWarning>
+        <div className="mt-20 mx-[80.5px] mb-[60px]" suppressHydrationWarning={true}>
             <Breadcrumb customBreadcrumbs={breadcrumbs}/>
             <div className="mt-10 flex">
                 <PhotoCarousel 
@@ -62,6 +64,9 @@ export default function ProductPage({ params }: { params: { productId: string } 
                         <p className="ml-3">{product.rating}</p>
                     </div>
                     <VolumePicker product={product}/>
+                    {product.shades && product.shades.length > 0 &&
+                        <ShadesDropdown className="mt-7" shades={product.shades}/>
+                    }
                     <div className="flex mt-10">
                         {product.oldPrice && product.oldPrice > 0 &&
                             <p className="text-grey line-through text-18px mr-4">{product.oldPrice} ₸</p>
@@ -78,6 +83,14 @@ export default function ProductPage({ params }: { params: { productId: string } 
                     <Button className="pl-0 mt-5" type="transparent">Наличие в магазине</Button>
                 </div>
             </div>
+            <ProductInfo
+                description={product.description}
+                usage={product.usage}
+                ingredients={product.ingredients}
+                brand="Some brand"
+                reviews={product.reviews}
+                extraInfo={product.extraInfo}
+            />
         </div>
     )
 }

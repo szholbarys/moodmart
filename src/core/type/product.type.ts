@@ -6,7 +6,7 @@ export type Product = {
     images: string[]
     category: string;
     volumes? : number[];
-    shades?: string[];
+    shades?: Shade[];
     oldPrice?: number;
     price: number;
     rating: number;
@@ -21,11 +21,16 @@ export type Product = {
     extraInfo: string;
 } 
 
-type Review = {
+export type Review = {
     rating: number;
     author: string;
     date: string;
     pros: string;
     cons: string;
     comment: string;
+}
+
+export type Shade = {
+    name: string;
+    hexColor: string;
 }

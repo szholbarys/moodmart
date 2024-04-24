@@ -104,7 +104,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchProducts();
-  });
+  },[]);
 
   const products2: Product[] = []
   products2.push(products[0])
