@@ -4,7 +4,7 @@ import { FC, useState } from "react";
 interface ProductInfoProps {
     description?: string,
     usage?: string,
-    ingredients?: string,
+    ingredients?: string[],
     brand?: string,
     reviews?: Review[],
     extraInfo?: string,
