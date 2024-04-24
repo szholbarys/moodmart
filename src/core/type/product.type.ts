@@ -24,7 +24,7 @@ export type Product = {
 type Review = {
     rating: number;
     author: string;
-    date: Date;
+    date: string;
     pros: string;
     cons: string;
     comment: string;
