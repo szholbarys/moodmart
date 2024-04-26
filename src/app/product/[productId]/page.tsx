@@ -8,11 +8,19 @@ import VolumePicker from "@/components/shared/VolumePicker";
 import { HeartIcon } from "@/components/shared/icons/heartIcon";
 import ShadesDropdown from "@/components/shared/ShadesDropdown";
 import ProductInfo from "@/components/widgets/ProductInfo";
+import Carousel from "@/components/widgets/Carousel";
+import { ProductCard } from "@/components/widgets/ProductCard";
+import { storeViewedProducts } from "@/actions/api/product";
+import { Product } from "@/core/type/product.type";
 
 export default function ProductPage({ params }: { params: { productId: string } }) {
-    const { findProductById } = useProductStore();
+    const { findProductById, products } = useProductStore();
     const product = findProductById(params.productId as string);
-    console.log(product);
+    
+    const viewedProducts: Product[] = JSON.parse(sessionStorage.getItem('viewedProducts') || '[]');
+    console.log(viewedProducts)
+    product && storeViewedProducts(product);
+
     const breadcrumbs: Breadcrumb[] = [
         {
             label: product?.category,
@@ -20,7 +28,6 @@ export default function ProductPage({ params }: { params: { productId: string } 
         }
     ]
  
-
     if (!product) {
         return (
           <div className="mt-20 mx-[80.5px] mb-[60px]" suppressHydrationWarning={true}>
@@ -47,15 +54,21 @@ export default function ProductPage({ params }: { params: { productId: string } 
 
     return (
         <div className="mt-20 mx-[80.5px] mb-[60px]" suppressHydrationWarning={true}>
-            <Breadcrumb customBreadcrumbs={breadcrumbs}/>
+            <Breadcrumb customBreadcrumbs={breadcrumbs} className="mt-[111px]"/>
             <div className="mt-10 flex">
+            {product.images && product.images.length > 0 ? (
                 <PhotoCarousel 
                     images={product.images} 
                     name={product.name}
                     isHit={product.isHit}
                     isNew={product.isNew}
                     discount={product.discount}
+                    className="min-w-[50%]"
                 />
+            ) : (
+                <h2 className="text-4xl font-bold mx-20 w-[30%]">Нет фотографий товара</h2>
+            )}
+
                 <div className="ml-[51px]">
                     <p className="text-18px">{product.category}</p>
                     <h2 className="mt-5 font-bold text-24px">{product.name}</h2>
@@ -84,13 +97,35 @@ export default function ProductPage({ params }: { params: { productId: string } 
                 </div>
             </div>
             <ProductInfo
+                productName={product.name}
+                id={product.id}
                 description={product.description}
                 usage={product.usage}
                 ingredients={product.ingredients}
-                brand="Some brand"
+                brandName="rhode"
                 reviews={product.reviews}
                 extraInfo={product.extraInfo}
             />
+            <Carousel title="Похожие товары"  slidesToShow={4} className="mb-16 mt-[107px]">
+                {products.map((product, index) => (
+                    <div key={index}>
+                        <ProductCard product={product} type="horizontal"/>
+                    </div>
+                ))}
+            </Carousel>
+            {viewedProducts && viewedProducts.length > 0 &&
+            <Carousel 
+                title="Вы недавно смотрели"  
+                slidesToShow={viewedProducts.length < 4 ? viewedProducts.length : 4} 
+                className="mb-16"
+            >
+                {viewedProducts.map((viewedProduct, index) => (
+                    <div key={index}>
+                        <ProductCard product={viewedProduct} type="horizontal"/>
+                    </div>
+                ))}
+            </Carousel>
+            }
         </div>
     )
 }

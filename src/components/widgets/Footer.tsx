@@ -7,6 +7,7 @@ import { useState, ChangeEvent } from "react";
 import { InstIcon } from "../shared/icons/instIcon";
 import { YouTubeIcon } from "../shared/icons/youtubeIcon";
 import { useRouter } from "next/navigation";
+import SupportBlock from "../shared/SupportBlock";
 
 const Footer: React.FC = () => {
     const router = useRouter()
@@ -22,15 +23,10 @@ const Footer: React.FC = () => {
     };
     return (
         <div className="bg-black py-10 px-20">
-            <div className="flex justify-between">
-                <div className="w-[15%]">
-                    <LogoSvg color="white" className="mb-10 cursor-pointer" onClick={() => {router.push('/')}}/>
-                    <p className="text-16px text-white font-bold">нужна консультация?</p>
-                    <p className="text-16px text-grey whitespace-normal mb-5">наши специалисты ответят на любой вопрос</p>
-                    <div className="flex items-center">
-                        <WhatsAppIcon size={16} color="white" className="mr-2"/>
-                        <a className="text-grey a-white">WhatsApp</a>
-                    </div>
+            <div className="flex gap-[67px]">
+                <div>
+                    <LogoSvg color="var(--white)" className="cursor-pointer" onClick={() => {router.push('/')}}/>
+                    <SupportBlock className="mt-10"/>
                 </div>
                 <div className="flex flex-col text-18px">
                     <p className="text-white mb-5 text-20px text-bold">о нас</p>

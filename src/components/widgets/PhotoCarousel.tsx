@@ -13,10 +13,11 @@ interface PhotoCarouselProps {
     isNew?: boolean,
     discount?: number,
     isHit?: boolean,
+    className?: string,
 }
 
 const PhotoCarousel: FC<PhotoCarouselProps> = ({ 
-    images, name, isNew, discount, isHit 
+    images, name, isNew, discount, isHit, className 
     }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [chosenSlide, setChosenSlide] = useState(0);
@@ -47,7 +48,7 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({
 
 
     return (
-        <div className="flex">
+        <div className={`flex ${className}`}>
             <div className="flex flex-col items-center mr-[53px] h-[110%]">
                 <button onClick={handlePrev} disabled={currentSlide === 0}>
                     <PrevArrowIcon color={prevButtonDisabled ? "var(--grey)" : "var(--black)"} className="rotate-90 mb-6" />

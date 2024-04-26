@@ -21,7 +21,6 @@ const Carousel:React.FC<CarouselProps> = ({ title, slidesToShow, className, chil
       speed: 500,
       slidesToShow: slidesToShow,
       slidesToScroll: slidesToShow,
-      initialSlide: 1,
       responsive: [
         {
           breakpoint: 1024,

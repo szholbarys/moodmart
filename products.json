@@ -1,992 +1,1082 @@
 [
-    {
-      "id": "1",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.1 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product2.svg",
-        "/images/product3.svg",
-        "/images/product4.svg",
-        "/images/product1.svg",
-        "/images/product2.svg"
-      ],
-      "category": "уход за лицом",
-      "oldPrice": 3441,
-      "price": 3441,
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.5,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.1 Blue Lagoon is a hydrating lip balm formulated with vegan ingredients to nourish and protect your lips. Infused with the refreshing essence of Blue Lagoon, it provides long-lasting moisture and a hint of color.",
-      "usage": "Apply liberally to lips as often as needed.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover123",
-          "date": "2024-04-20",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "Absolutely love this lip balm! It keeps my lips hydrated throughout the day and has a lovely scent. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic",
-          "date": "2024-04-18",
-          "pros": "Good moisturization, cute packaging",
-          "cons": "Slight waxy feel",
-          "comment": "Overall, a great lip balm. Provides good hydration and I adore the packaging. Only downside is it can feel a bit waxy initially."
-        }
-      ],
-      "extraInfo": "Cruelty-free, paraben-free, made with natural ingredients."
-    },
-    {
-      "id": "2",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product2.svg",
-      "images": [
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 3.9,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a subtle tint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmAddict",
-          "date": "2024-04-22",
-          "pros": "Moisturizing, lovely scent",
-          "cons": "None",
-          "comment": "This lip balm is amazing! It keeps my lips hydrated and has a delightful scent. I'm impressed!"
-        },
-        {
-          "rating": 3,
-          "author": "BeautyEnthusiast",
-          "date": "2024-04-20",
-          "pros": "Decent moisturization",
-          "cons": "Doesn't last long",
-          "comment": "It's a decent lip balm for hydration, but I find myself reapplying frequently throughout the day."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "3",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.3 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product3.svg",
-      "images": [
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.7,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.3 Blue Lagoon is a luxurious lip balm infused with the essence of Blue Lagoon. Its nourishing formula provides intense hydration, leaving your lips soft and supple.",
-      "usage": "Apply liberally to lips whenever they feel dry for instant moisture and comfort.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipCareLover",
-          "date": "2024-04-19",
-          "pros": "Ultra-hydrating, long-lasting",
-          "cons": "None",
-          "comment": "This lip balm is my new favorite! It keeps my lips hydrated all day long without needing constant reapplication."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyBlogger123",
-          "date": "2024-04-17",
-          "pros": "Great hydration, lovely scent",
-          "cons": "Slightly pricey",
-          "comment": "I really enjoy using this lip balm. It provides excellent hydration and has a pleasant scent, but it's a bit on the pricey side."
-        }
-      ],
-      "extraInfo": "Formulated without sulfates, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "4",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.4 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product4.svg",
-      "images": [
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.2,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.4 Blue Lagoon is a soothing lip balm enriched with the essence of Blue Lagoon. Its hydrating formula provides immediate relief to dry, chapped lips, leaving them feeling soft and smooth.",
-      "usage": "Apply to lips as often as needed for hydration and protection against environmental aggressors.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmObsessed",
-          "date": "2024-04-21",
-          "pros": "Moisturizing, non-sticky",
-          "cons": "None",
-          "comment": "I'm obsessed with this lip balm! It's incredibly moisturizing without feeling sticky. My lips feel amazing after using it."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyJunkie",
-          "date": "2024-04-19",
-          "pros": "Effective hydration, cute packaging",
-          "cons": "Slightly pricey",
-          "comment": "This lip balm works wonders for dry lips. Plus, the packaging is adorable! It's a bit expensive, but worth it for the results."
-        }
-      ],
-      "extraInfo": "Free of artificial colors, mineral oils, and silicones."
-    },
-    {
-      "id": "5",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.5 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.3,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.5 Blue Lagoon is a nourishing lip balm enriched with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover456",
-          "date": "2024-04-18",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic987",
-          "date": "2024-04-16",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "6",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.6 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product4.svg",
-      "images": [
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.8,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.6 Blue Lagoon is a luxurious lip treatment infused with the essence of Blue Lagoon. Its rich formula deeply nourishes and repairs dry, damaged lips, leaving them smooth and supple.",
-      "usage": "Apply a generous amount to lips before bedtime for overnight hydration and repair.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmQueen",
-          "date": "2024-04-17",
-          "pros": "Intense hydration, long-lasting",
-          "cons": "None",
-          "comment": "This lip balm is a game-changer! It provides intense hydration and lasts all night. My lips feel amazing in the morning."
-        },
-        {
-          "rating": 5,
-          "author": "BeautyGuru",
-          "date": "2024-04-15",
-          "pros": "Effective repair, luxurious feel",
-          "cons": "None",
-          "comment": "I love this lip balm! It repairs my dry lips overnight and feels so luxurious. Definitely worth the splurge."
-        }
-      ],
-      "extraInfo": "Free of sulfates, mineral oils, and synthetic dyes."
-    },
-    {
-      "id": "7",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.7 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product2.svg",
-      "images": [
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.6,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.7 Blue Lagoon is a nourishing lip balm enriched with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover789",
-          "date": "2024-04-16",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-14",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a big issue."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "8",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.8 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product4.svg",
-      "images": [
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.1,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.8 Blue Lagoon is a hydrating lip balm formulated with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover012",
-          "date": "2024-04-15",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is great! It keeps my lips hydrated and has a pleasant scent. Would purchase again."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic345",
-          "date": "2024-04-13",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really like this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy initially, but it's not a major issue."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "9",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.9 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4.4,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.9 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover789",
-          "date": "2024-04-15",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-13",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a big issue."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "10",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.10 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product2.svg",
-      "images": [
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "shades": [
-        { "name": "Red", "hexColor": "#ff0000" },
-        { "name": "Pink", "hexColor": "#ff69b4" },
-        { "name": "Nude", "hexColor": "#f5deb3" }
-      ],
-      "rating": 4,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.10 Blue Lagoon is a hydrating lip balm formulated with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover012",
-          "date": "2024-04-14",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is great! It keeps my lips hydrated and has a pleasant scent. Would purchase again."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic345",
-          "date": "2024-04-12",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really like this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy initially, but it's not a major issue."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "11",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.11 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.9,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.11 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover123",
-          "date": "2024-04-20",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "I love this lip balm! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyEnthusiast456",
-          "date": "2024-04-18",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "This lip balm is great. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a deal-breaker."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "12",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.12 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product3.svg",
-      "images": [
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 3.8,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.12 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover789",
-          "date": "2024-04-17",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 3,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-15",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "13",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.13 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product4.svg",
-      "images": [
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.6,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.13 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover456",
-          "date": "2024-04-18",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic987",
-          "date": "2024-04-16",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "14",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.14 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.2,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.14 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover789",
-          "date": "2024-04-17",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 3,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-15",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "15",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.15 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product2.svg",
-      "images": [
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.7,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.15 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover789",
-          "date": "2024-04-18",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-16",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "16",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.16 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product3.svg",
-      "images": [
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 3.6,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.16 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover789",
-          "date": "2024-04-17",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 3,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-15",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "17",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.17 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product4.svg",
-      "images": [
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg",
-        "/images/product4.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.8,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.17 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover456",
-          "date": "2024-04-18",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic987",
-          "date": "2024-04-16",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "18",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.18 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product1.svg",
-      "images": [
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg",
-        "/images/product1.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4.3,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.18 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover123",
-          "date": "2024-04-17",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic321",
-          "date": "2024-04-15",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    },
-    {
-      "id": "19",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.19 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product2.svg",
-      "images": [
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg",
-        "/images/product2.svg"
-      ],
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "rating": 4.5,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.19 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
-      "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
-      "reviews": [
-        {
-          "rating": 5,
-          "author": "LipBalmLover789",
-          "date": "2024-04-18",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 4,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-16",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
-    },
-    {
-      "id": "20",
-      "name": "UNLEASHIA Glacier Vegan Lip Balm No.20 Blue Lagoon",
-      "brand": "UNLEASHIA",
-      "cover": "/images/product3.svg",
-      "images": [
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg",
-        "/images/product3.svg"
-      ],
-      "oldPrice": 3441,
-      "price": 3441,
-      "category": "уход за лицом",
-      "volumes": [
-        30,
-        10
-      ],
-      "rating": 4,
-      "ratingCount": 122,
-      "isNew": true,
-      "discount": 66,
-      "isHit": true,
-      "description": "UNLEASHIA Glacier Vegan Lip Balm No.20 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
-      "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
-      "reviews": [
-        {
-          "rating": 4,
-          "author": "LipBalmLover789",
-          "date": "2024-04-17",
-          "pros": "Moisturizing, pleasant scent",
-          "cons": "None",
-          "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
-        },
-        {
-          "rating": 3,
-          "author": "BeautyFanatic654",
-          "date": "2024-04-15",
-          "pros": "Good hydration, cute packaging",
-          "cons": "Slightly waxy feel",
-          "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
-        }
-      ],
-      "extraInfo": "Vegan, cruelty-free, and free of parabens."
-    }
-  ]
+  {
+    "id": "1",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.1 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product2.svg",
+      "/images/product3.svg",
+      "/images/product4.svg",
+      "/images/product1.svg",
+      "/images/product2.svg"
+    ],
+    "category": "уход за лицом",
+    "oldPrice": 3441,
+    "price": 3441,
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.5,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.1 Blue Lagoon is a hydrating lip balm formulated with vegan ingredients to nourish and protect your lips. Infused with the refreshing essence of Blue Lagoon, it provides long-lasting moisture and a hint of color.",
+    "usage": "Apply liberally to lips as often as needed.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover123",
+        "date": "2024-04-20",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "Absolutely love this lip balm! It keeps my lips hydrated throughout the day and has a lovely scent. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic",
+        "date": "2024-04-18",
+        "pros": "Good moisturization, cute packaging",
+        "cons": "Slight waxy feel",
+        "comment": "Overall, a great lip balm. Provides good hydration and I adore the packaging. Only downside is it can feel a bit waxy initially."
+      }
+    ],
+    "extraInfo": "Cruelty-free, paraben-free, made with natural ingredients."
+  },
+  {
+    "id": "2",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product2.svg",
+    "images": [
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 3.9,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.2 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a subtle tint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmAddict",
+        "date": "2024-04-22",
+        "pros": "Moisturizing, lovely scent",
+        "cons": "None",
+        "comment": "This lip balm is amazing! It keeps my lips hydrated and has a delightful scent. I'm impressed!"
+      },
+      {
+        "rating": 3,
+        "author": "BeautyEnthusiast",
+        "date": "2024-04-20",
+        "pros": "Decent moisturization",
+        "cons": "Doesn't last long",
+        "comment": "It's a decent lip balm for hydration, but I find myself reapplying frequently throughout the day."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "3",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.3 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product3.svg",
+    "images": [
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.7,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.3 Blue Lagoon is a luxurious lip balm infused with the essence of Blue Lagoon. Its nourishing formula provides intense hydration, leaving your lips soft and supple.",
+    "usage": "Apply liberally to lips whenever they feel dry for instant moisture and comfort.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipCareLover",
+        "date": "2024-04-19",
+        "pros": "Ultra-hydrating, long-lasting",
+        "cons": "None",
+        "comment": "This lip balm is my new favorite! It keeps my lips hydrated all day long without needing constant reapplication."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyBlogger123",
+        "date": "2024-04-17",
+        "pros": "Great hydration, lovely scent",
+        "cons": "Slightly pricey",
+        "comment": "I really enjoy using this lip balm. It provides excellent hydration and has a pleasant scent, but it's a bit on the pricey side."
+      }
+    ],
+    "extraInfo": "Formulated without sulfates, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "4",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.4 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product4.svg",
+    "images": [
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.2,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.4 Blue Lagoon is a soothing lip balm enriched with the essence of Blue Lagoon. Its hydrating formula provides immediate relief to dry, chapped lips, leaving them feeling soft and smooth.",
+    "usage": "Apply to lips as often as needed for hydration and protection against environmental aggressors.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmObsessed",
+        "date": "2024-04-21",
+        "pros": "Moisturizing, non-sticky",
+        "cons": "None",
+        "comment": "I'm obsessed with this lip balm! It's incredibly moisturizing without feeling sticky. My lips feel amazing after using it."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyJunkie",
+        "date": "2024-04-19",
+        "pros": "Effective hydration, cute packaging",
+        "cons": "Slightly pricey",
+        "comment": "This lip balm works wonders for dry lips. Plus, the packaging is adorable! It's a bit expensive, but worth it for the results."
+      }
+    ],
+    "extraInfo": "Free of artificial colors, mineral oils, and silicones."
+  },
+  {
+    "id": "5",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.5 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.3,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.5 Blue Lagoon is a nourishing lip balm enriched with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover456",
+        "date": "2024-04-18",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic987",
+        "date": "2024-04-16",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "6",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.6 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product4.svg",
+    "images": [
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.8,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.6 Blue Lagoon is a luxurious lip treatment infused with the essence of Blue Lagoon. Its rich formula deeply nourishes and repairs dry, damaged lips, leaving them smooth and supple.",
+    "usage": "Apply a generous amount to lips before bedtime for overnight hydration and repair.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmQueen",
+        "date": "2024-04-17",
+        "pros": "Intense hydration, long-lasting",
+        "cons": "None",
+        "comment": "This lip balm is a game-changer! It provides intense hydration and lasts all night. My lips feel amazing in the morning."
+      },
+      {
+        "rating": 5,
+        "author": "BeautyGuru",
+        "date": "2024-04-15",
+        "pros": "Effective repair, luxurious feel",
+        "cons": "None",
+        "comment": "I love this lip balm! It repairs my dry lips overnight and feels so luxurious. Definitely worth the splurge."
+      }
+    ],
+    "extraInfo": "Free of sulfates, mineral oils, and synthetic dyes."
+  },
+  {
+    "id": "7",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.7 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product2.svg",
+    "images": [
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.6,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.7 Blue Lagoon is a nourishing lip balm enriched with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover789",
+        "date": "2024-04-16",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-14",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a big issue."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "8",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.8 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product4.svg",
+    "images": [
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.1,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.8 Blue Lagoon is a hydrating lip balm formulated with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover012",
+        "date": "2024-04-15",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is great! It keeps my lips hydrated and has a pleasant scent. Would purchase again."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic345",
+        "date": "2024-04-13",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really like this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy initially, but it's not a major issue."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "9",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.9 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4.4,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.9 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover789",
+        "date": "2024-04-15",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-13",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a big issue."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "10",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.10 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product2.svg",
+    "images": [
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "shades": [
+      {
+        "name": "Red",
+        "hexColor": "#ff0000"
+      },
+      {
+        "name": "Pink",
+        "hexColor": "#ff69b4"
+      },
+      {
+        "name": "Nude",
+        "hexColor": "#f5deb3"
+      }
+    ],
+    "rating": 4,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.10 Blue Lagoon is a hydrating lip balm formulated with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover012",
+        "date": "2024-04-14",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is great! It keeps my lips hydrated and has a pleasant scent. Would purchase again."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic345",
+        "date": "2024-04-12",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really like this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy initially, but it's not a major issue."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "11",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.11 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.9,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.11 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover123",
+        "date": "2024-04-20",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "I love this lip balm! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyEnthusiast456",
+        "date": "2024-04-18",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "This lip balm is great. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's not a deal-breaker."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "12",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.12 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product3.svg",
+    "images": [
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 3.8,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.12 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover789",
+        "date": "2024-04-17",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 3,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-15",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "13",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.13 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product4.svg",
+    "images": [
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.6,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.13 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover456",
+        "date": "2024-04-18",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic987",
+        "date": "2024-04-16",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "14",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.14 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.2,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.14 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover789",
+        "date": "2024-04-17",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 3,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-15",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "15",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.15 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product2.svg",
+    "images": [
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.7,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.15 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover789",
+        "date": "2024-04-18",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-16",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "16",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.16 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product3.svg",
+    "images": [
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 3.6,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.16 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover789",
+        "date": "2024-04-17",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 3,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-15",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "17",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.17 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product4.svg",
+    "images": [
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg",
+      "/images/product4.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.8,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.17 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover456",
+        "date": "2024-04-18",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is amazing! It keeps my lips hydrated all day and smells wonderful. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic987",
+        "date": "2024-04-16",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I really like this lip balm. It provides good hydration and the packaging is adorable. It can feel a bit waxy at first, but it's not a deal-breaker."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "18",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.18 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product1.svg",
+    "images": [
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg",
+      "/images/product1.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4.3,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.18 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover123",
+        "date": "2024-04-17",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic321",
+        "date": "2024-04-15",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  },
+  {
+    "id": "19",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.19 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product2.svg",
+    "images": [
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg",
+      "/images/product2.svg"
+    ],
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "rating": 4.5,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.19 Blue Lagoon is a nourishing lip balm infused with the essence of Blue Lagoon. Its vegan formula provides long-lasting hydration and protection, leaving your lips feeling soft and supple.",
+    "usage": "Apply to lips as needed throughout the day for moisturization and a hint of color.",
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "LipBalmLover789",
+        "date": "2024-04-18",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 4,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-16",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Formulated without parabens, phthalates, and synthetic fragrances."
+  },
+  {
+    "id": "20",
+    "name": "UNLEASHIA Glacier Vegan Lip Balm No.20 Blue Lagoon",
+    "brand": "UNLEASHIA",
+    "cover": "/images/product3.svg",
+    "images": [
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg",
+      "/images/product3.svg"
+    ],
+    "oldPrice": 3441,
+    "price": 3441,
+    "category": "уход за лицом",
+    "volumes": [
+      30,
+      10
+    ],
+    "rating": 4,
+    "ratingCount": 122,
+    "isNew": true,
+    "discount": 66,
+    "isHit": true,
+    "description": "UNLEASHIA Glacier Vegan Lip Balm No.20 Blue Lagoon is a hydrating lip balm enriched with the essence of Blue Lagoon. Its nourishing formula provides long-lasting moisture and protection for your lips, leaving them soft and smooth.",
+    "usage": "Apply to lips as needed throughout the day for hydration and a hint of color.",
+    "reviews": [
+      {
+        "rating": 4,
+        "author": "LipBalmLover789",
+        "date": "2024-04-17",
+        "pros": "Moisturizing, pleasant scent",
+        "cons": "None",
+        "comment": "This lip balm is fantastic! It keeps my lips hydrated and smells great. Highly recommend."
+      },
+      {
+        "rating": 3,
+        "author": "BeautyFanatic654",
+        "date": "2024-04-15",
+        "pros": "Good hydration, cute packaging",
+        "cons": "Slightly waxy feel",
+        "comment": "I enjoy using this lip balm. It provides good hydration and the packaging is cute. It can feel a bit waxy at first, but it's manageable."
+      }
+    ],
+    "extraInfo": "Vegan, cruelty-free, and free of parabens."
+  }
+]

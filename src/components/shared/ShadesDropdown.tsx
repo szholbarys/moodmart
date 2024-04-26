@@ -48,7 +48,7 @@ const ShadesDropdown: FC<ShadesDropdownProps> = ({ shades, className }) => {
                     size={18}
                     />
             </div>
-            <div className={`absolute w-[110%] top-[50px] bg-white shadow-xl transition-all duration-500 overflow-hidden ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+            <div className={`absolute w-[110%] top-[50px] bg-white shadow-xl transition-all duration-500 ease-linear overflow-hidden ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
                 {shadesAsObjects.map((shade, index) => (
                     <div key={index} className={`flex items-center cursor-pointer px-4 ${index === shadesAsObjects.length - 1 ? 'pb-4' : ''} ${index === 0 ? 'pt-4' : ''}`} onClick={() => {handleSelect(shade)}}>
                         <div className={`rounded-full w-4 h-4 mr-2 `} style={{backgroundColor: shade.data}}></div>

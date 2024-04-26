@@ -3,8 +3,8 @@ export type Product = {
     name: string;
     brand: string;
     cover: string;
-    images: string[]
-    category: string;
+    images?: string[]
+    category?: string;
     volumes? : number[];
     shades?: Shade[];
     oldPrice?: number;
@@ -17,8 +17,8 @@ export type Product = {
     description?: string;
     usage?: string;
     ingredients?: string[];
-    reviews: Review[];
-    extraInfo: string;
+    reviews?: Review[];
+    extraInfo?: string;
 } 
 
 export type Review = {

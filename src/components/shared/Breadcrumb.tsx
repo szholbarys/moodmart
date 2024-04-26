@@ -8,10 +8,11 @@ interface Breadcrumb {
 }
 
 interface BreadcrumbProps {
-  customBreadcrumbs?: Breadcrumb[]
+  customBreadcrumbs?: Breadcrumb[],
+  className?: string,
 }
 
-const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs }) => {
+const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs, className }) => {
   const router = useRouter();
   const pathname = usePathname();
   const pathSegments = pathname.split('/').filter(Boolean); // Split pathname into segments
@@ -45,7 +46,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs }) => {
 
 
   return (
-    <div>
+    <div className={className}>
       {breadcrumbs.map((breadcrumb, index) => (
         <span key={index}>
             <a className='font-sans cursor-pointer primary-hover text-18px' onClick={() => router.push(`/${breadcrumb.href}`)}>{breadcrumb.label}</a>
