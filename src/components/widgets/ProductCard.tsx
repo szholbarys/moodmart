@@ -50,12 +50,19 @@ export const ProductCard:React.FC<ProductProps> = ( { product, className, type =
             ) : (
                 <div className={`${type === "vertical" ? "flex" : "block"} cursor-pointer`}>
                 <div className={`${type === "vertical" ? "mr-6" : "mr-0"} relative max-w-[302px]`}>
-                    <Image 
+                    {product.cover && product.cover.length > 0 ? (
+                        <Image 
                         src={product.cover}
                         width={type === "vertical" ? 200 : 302}
                         height={type === "vertical" ? 100 : 340}
                         alt={product.name}
-                    />
+                        />
+                    ) : (
+                        <div className={`w-[${type === "vertical" ? 200 : 302}px] h-[${type === "vertical" ? 100 : 340}px] flex items-center justify-center`}>
+                            <h3 className="text-22px font-semibold text-wrap">Нет фотографий</h3>
+                        </div>
+                    )
+                    }
                     <Fragment>
                         <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
                             {product.isNew && 
