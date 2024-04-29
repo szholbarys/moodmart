@@ -15,10 +15,7 @@
     "category": "уход за лицом",
     "oldPrice": 3441,
     "price": 3441,
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -76,10 +73,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -137,10 +131,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -198,10 +189,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -259,10 +247,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -320,10 +305,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -381,10 +363,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -442,10 +421,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -503,10 +479,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -564,10 +537,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "shades": [
       {
         "name": "Red",
@@ -625,10 +595,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.9,
     "ratingCount": 122,
     "isNew": true,
@@ -672,10 +639,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 3.8,
     "ratingCount": 122,
     "isNew": true,
@@ -719,10 +683,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.6,
     "ratingCount": 122,
     "isNew": true,
@@ -766,10 +727,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.2,
     "ratingCount": 122,
     "isNew": true,
@@ -813,10 +771,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.7,
     "ratingCount": 122,
     "isNew": true,
@@ -860,10 +815,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 3.6,
     "ratingCount": 122,
     "isNew": true,
@@ -907,10 +859,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.8,
     "ratingCount": 122,
     "isNew": true,
@@ -954,10 +903,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4.3,
     "ratingCount": 122,
     "isNew": true,
@@ -999,10 +945,7 @@
       "/images/product2.svg"
     ],
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "oldPrice": 3441,
     "price": 3441,
     "rating": 4.5,
@@ -1048,10 +991,7 @@
     "oldPrice": 3441,
     "price": 3441,
     "category": "уход за лицом",
-    "volumes": [
-      30,
-      10
-    ],
+    "volumes": [30, 10],
     "rating": 4,
     "ratingCount": 122,
     "isNew": true,

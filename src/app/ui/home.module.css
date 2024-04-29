@@ -1,26 +1,26 @@
 .navbar {
-    display: flex;
-    font-size: 1.125rem;
-    align-items: center;
+  display: flex;
+  font-size: 1.125rem;
+  align-items: center;
 }
 
 .navbar a {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .navbar a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .controls {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .controls li {
-    margin-right: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .controls li:last-child {
-    margin-right: -0.75rem;
+  margin-right: -0.75rem;
 }

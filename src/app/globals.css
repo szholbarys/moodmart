@@ -16,20 +16,22 @@
   }
 }
 
-*,*:focus,*:hover{
-  outline:none;
+*,
+*:focus,
+*:hover {
+  outline: none;
 }
 
 :root {
-  --primary: #AB8677;
-  --black: #0B0B0B;
+  --primary: #ab8677;
+  --black: #0b0b0b;
   --white: #ffffff;
-  --grey: #AEAEAE;
-  --light_grey: #E0E0E0;
+  --grey: #aeaeae;
+  --light_grey: #e0e0e0;
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 450;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -42,22 +44,22 @@ body {
   }
 }
 
-h1{
-  font-size: 3.75rem!important;
+h1 {
+  font-size: 3.75rem !important;
   font-weight: 600;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
 /* Hero carousel */
 
 li.slick-active > div {
-  background-color: var(--black)!important;
+  background-color: var(--black) !important;
 }
 
 .slick-dots li {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 /* Product carousel */
@@ -66,7 +68,8 @@ li.slick-active > div {
   transition: 200ms ease-in-out;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -100,21 +103,20 @@ textarea:focus, input:focus{
   max-height: inherit;
 }
 
-.category-item input[type="checkbox"] {
-    accent-color: black;
-    width: 16px;
-    height: 16px;
-    border-radius: 0em;
+.category-item input[type='checkbox'] {
+  accent-color: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 0em;
 }
 
 .category-item span .partial::after {
-    content: "—"; /* En dash for a more aesthetic dash, but you can use "-" for a simple dash */
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;  /* Adjust this based on your actual checkbox size */
-    pointer-events: none;
+  content: '—'; /* En dash for a more aesthetic dash, but you can use "-" for a simple dash */
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px; /* Adjust this based on your actual checkbox size */
+  pointer-events: none;
 }
-

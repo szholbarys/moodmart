@@ -1,6 +1,6 @@
 export type Promo = {
-    ctaTitle: string;
-    ctaText: string;
-    image: string;
-    time: number;
+  ctaTitle: string
+  ctaText: string
+  image: string
+  time: number
 }

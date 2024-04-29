@@ -1,4 +1,4 @@
 export interface Story {
-    image: string,
-    text: string,
+  image: string
+  text: string
 }

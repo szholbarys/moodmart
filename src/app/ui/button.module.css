@@ -1,18 +1,18 @@
 .primary {
-  background-color: #0B0B0B;
+  background-color: #0b0b0b;
   color: #fff;
   padding: 12px 24px;
 }
 
 .ghost {
   background-color: transparent;
-  color: #0B0B0B;
-  border: 1px solid #0B0B0B;
+  color: #0b0b0b;
+  border: 1px solid #0b0b0b;
   padding: 12px 24px;
 }
 
 .transparent {
   background-color: transparent;
-  color: #0B0B0B;
+  color: #0b0b0b;
   padding: 12px 24px;
 }
