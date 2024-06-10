@@ -2,10 +2,11 @@
 import { Product } from '@/core/type/product.type'
 import Image from 'next/image'
 import React, { Fragment, useEffect, useState } from 'react'
-import { HeartIcon } from '../shared/icons/heartIcon'
 import { PlusIcon } from '../shared/icons/plusIcon'
 import { StarRating } from '../shared/StarRating'
 import { useRouter } from 'next/navigation'
+import useProductStore from '@/store/product'
+import { HeartIcon } from '../shared/icons/heartIcon'
 
 interface ProductProps {
   product: Product
@@ -18,47 +19,53 @@ export const ProductCard: React.FC<ProductProps> = ({
   className,
   type = 'vertical',
 }) => {
-  const [loading, setLoading] = useState(true) // Set initial loading state to false
+  const [loading, setLoading] = useState(true)
+  const { addFavorite, removeFavorite, favorites } = useProductStore()
+  const isFavorite = favorites.some(fav => fav.id === product.id)
 
   useEffect(() => {
-    setLoading(true) // Set loading state to true when component mounts
+    setLoading(true)
 
     const timer = setTimeout(() => {
-      setLoading(false) // Simulate loading completion after a delay
-    }, 1000) // Adjust the delay time as needed
+      setLoading(false)
+    }, 1000)
 
-    return () => clearTimeout(timer) // Cleanup function to clear the timer
+    return () => clearTimeout(timer)
   }, [])
 
   const router = useRouter()
+
+  const handleFavoriteClick = () => {
+    if (isFavorite) {
+      removeFavorite(product.id)
+    } else {
+      addFavorite(product)
+    }
+  }
+
+  if (!product) {
+    return null
+  }
 
   return (
     <div
       className={`group ${className} ${type === 'vertical' ? '' : 'max-w-[302px]'}`}
     >
-      {product && loading ? (
+      {loading ? (
         <div className="skeleton-loading animate-pulse">
-          <div className="h-[340px] w-full bg-light_grey"></div>{' '}
-          {/* Placeholder for image */}
+          <div className="h-[340px] w-full bg-light_grey"></div>
           <div className="mt-6">
-            <div className="h-4 bg-light_grey w-1/2"></div>{' '}
-            {/* Placeholder for category */}
-            <div className="h-8 bg-light_grey mt-2"></div>{' '}
-            {/* Placeholder for name */}
+            <div className="h-4 bg-light_grey w-1/2"></div>
+            <div className="h-8 bg-light_grey mt-2"></div>
             <div className="flex items-center mt-2">
-              <div className="h-4 bg-light_grey w-12"></div>{' '}
-              {/* Placeholder for rating */}
-              <div className="ml-2 h-4 bg-light_grey w-20"></div>{' '}
-              {/* Placeholder for rating count */}
+              <div className="h-4 bg-light_grey w-12"></div>
+              <div className="ml-2 h-4 bg-light_grey w-20"></div>
             </div>
             <div className="mt-2 flex">
-              <div className="h-4 bg-light_grey w-16"></div>{' '}
-              {/* Placeholder for old price */}
-              <div className="ml-2 h-4 bg-light_grey w-20"></div>{' '}
-              {/* Placeholder for price */}
+              <div className="h-4 bg-light_grey w-16"></div>
+              <div className="ml-2 h-4 bg-light_grey w-20"></div>
             </div>
-            <div className="mt-2 h-4 bg-light_grey w-24"></div>{' '}
-            {/* Placeholder for discount */}
+            <div className="mt-2 h-4 bg-light_grey w-24"></div>
           </div>
         </div>
       ) : (
@@ -68,7 +75,7 @@ export const ProductCard: React.FC<ProductProps> = ({
           <div
             className={`${type === 'vertical' ? 'mr-6' : 'mr-0'} relative max-w-[302px]`}
           >
-            {product && product.cover && product.cover.length > 0 ? (
+            {product.cover ? (
               <Image
                 src={product.cover}
                 width={type === 'vertical' ? 200 : 302}
@@ -99,8 +106,10 @@ export const ProductCard: React.FC<ProductProps> = ({
                 )}
               </div>
               <HeartIcon
-                className="absolute top-0 right-0 m-2"
+                className={`absolute top-0 right-0 m-2 cursor-pointer ${isFavorite ? 'text-red-500' : 'text-grey-500'}`}
                 color="var(--grey)"
+                isActive={isFavorite}
+                onClick={handleFavoriteClick}
               />
               <div className="absolute bottom-0 right-0 mb-2 w-10 h-10 hidden group-hover:flex justify-center items-center bg-primary rounded-full">
                 <PlusIcon color="white" />
@@ -146,3 +155,4 @@ export const ProductCard: React.FC<ProductProps> = ({
     </div>
   )
 }
+ 

@@ -1,27 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { IconType } from '../../../core/type/icon.type'
 
-export const HeartIcon: React.FC<IconType> = ({
+interface HeartIconProps extends IconType {
+  isActive: boolean
+  onClick: () => void
+}
+
+export const HeartIcon: React.FC<HeartIconProps> = ({
   size = 32,
   className = '',
   color,
+  isActive,
+  onClick,
 }) => {
-  const [isActive, setIsActive] = useState(false)
-
-  const handleClick = () => {
-    setIsActive(!isActive)
-  }
-
   const heartColor = isActive ? '#000000' : color
   const hoverClass = isActive
     ? 'fill-black'
     : 'group-hover/heart:hover:fill-primary'
 
   return (
-    <div className={`group/heart ${className}`} onClick={handleClick}>
+    <div className={`group/heart ${className}`} onClick={onClick}>
       <svg
-        width="32"
-        height="32"
+        width={size}
+        height={size}
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
       >
