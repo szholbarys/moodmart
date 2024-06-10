@@ -28,7 +28,7 @@ const DropdownFilter: React.FC<DropdownFilterProps> = ({
     setIsOpen((prevState) => !prevState)
   }
   return (
-    <>
+    <div className='mt-'>
       <div className="flex justify-between items-end">
         <div
           className={`flex cursor-pointer items-center`}
@@ -73,7 +73,7 @@ const DropdownFilter: React.FC<DropdownFilterProps> = ({
       >
         {children}
       </div>
-    </>
+    </div>
   )
 }
 
