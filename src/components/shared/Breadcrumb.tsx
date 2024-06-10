@@ -37,6 +37,10 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ customBreadcrumbs, className }) => {
         label: 'каталог',
         href: 'catalog',
       },
+      {
+        label: 'избранное',
+        href: 'favorite',
+      },
     ]
 
     // Generate breadcrumbs from path segments

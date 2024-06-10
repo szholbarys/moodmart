@@ -21,7 +21,7 @@ export default function ProductPage({
   params: { productId: string }
 }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-  const { findProductById, products } = useProductStore()
+  const { findProductById, products, addFavorite, removeFavorite, favorites } = useProductStore()
   const product = findProductById(params.productId as string)
 
   product && storeViewedProducts(params.productId)
@@ -37,6 +37,18 @@ export default function ProductPage({
 
   const toggleDrawer = () => {
     setIsDrawerOpen((prevState) => !prevState)
+  }
+
+  const isFavorite = favorites.some(fav => fav.id === product?.id)
+
+  const handleFavoriteClick = () => {
+    if(product){
+      if(isFavorite){
+        removeFavorite(product.id)
+      }else{
+        addFavorite(product)
+      }
+    }
   }
 
   if (!product) {
@@ -129,7 +141,7 @@ export default function ProductPage({
             >
               {!product.inStock ? 'Узнать о поступлении' : 'Добавить в корзину'}
             </Button>
-            <HeartIcon color="var(--black)" className="mx-2 cursor-pointer" />
+            <HeartIcon color="var(--black)" className="mx-2 cursor-pointer" isActive={isFavorite} onClick={handleFavoriteClick}/>
           </div>
           <Button className="pl-0 mt-5" type="transparent">
             Наличие в магазине
