@@ -89,7 +89,50 @@ const orders: Order[] = [
             </div>
 
             {activeTab === 'profile' && (
-                "Profile things"
+            <form className="space-y-6 w-[496px]">
+                <div>
+                  <label className="block text-[14px] mt-[18px] mb-2" htmlFor="firstName">имя</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    value="Кенижан"
+                    className="w-full border border-gray-300 py-2 px-4 text-[16px] focus:outline-none"
+                  />
+                </div>
+              
+                <div>
+                  <label className="block text-[14px] mt-[18px] mb-2" htmlFor="lastName">фамилия</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    value="Дженнерқызы"
+                    className="w-full border border-gray-300 py-2 px-4 text-[16px] focus:outline-none"
+                  />
+                </div>
+              
+                <div>
+                  <label className="block text-[14px] mt-[18px] mb-2" htmlFor="phoneNumber">номер телефона</label>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    placeholder='+7 (777) 111 00 00'
+                    className="w-full border border-gray-300 py-2 px-4 text-[16px] focus:outline-none"
+                  />
+                </div>
+              
+                <div>
+                  <label className="block text-[14px] mt-[18px] mb-2" htmlFor="email">email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    value="kendal@gmail.com"
+                    className="w-full border border-gray-300 py-2 px-4 text-[16px] focus:outline-none"
+                  />
+                </div>
+
+                <button className='w-full bg-black font-bold text-white py-2 px-6 mb-4'>Сохранить</button>
+              </form>
+              
             )}
 
             {activeTab === 'orders' && (
