@@ -19,9 +19,9 @@ const categories: Category[] = [
     id: 2,
     name: 'Категория 2',
     subcategories: [
-      { id: 3, name: 'Категория 2-1' },
-      { id: 4, name: 'Категория 2-2' },
-      { id: 5, name: 'Категория 2-3' },
+      { id: 3, name: 'Категория 2.1' },
+      { id: 4, name: 'Категория 2.2' },
+      { id: 5, name: 'Категория 2.3' },
     ],
   },
   { id: 6, name: 'Категория 6' },
@@ -125,9 +125,9 @@ const CheckBoxTree: React.FC<CheckBoxTreeProps> = ({
 
   const renderCategories = (categories: Category[], depth = 0) => {
     return categories.map((category: Category) => (
-      <div key={category.id} className={`ml-${depth * 7} category-item`}>
+      <div key={category.id} className={`ml-${depth * 7} category-item mt-3`}>
         {category.subcategories ? (
-          <div className="gap-2 mb-1">
+          <div className="gap-2">
             <input
               type="checkbox"
               checked={checkedIds.includes(category.id)}
@@ -146,7 +146,7 @@ const CheckBoxTree: React.FC<CheckBoxTreeProps> = ({
             </DropdownFilter>
           </div>
         ) : (
-          <label className="flex items-center gap-2 mb-1">
+          <label className="flex items-center gap-2 mb-2">
             <input
               type="checkbox"
               checked={checkedIds.includes(category.id)}
