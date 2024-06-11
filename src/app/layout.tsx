@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   },
 }
 
+const blackListFooter = ["login"]
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +23,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main className="w-full">{children}</main>
-        <Footer />
+        {} <Footer />
       </body>
     </html>
   )
