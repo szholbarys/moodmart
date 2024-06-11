@@ -20,7 +20,7 @@ export const ProductCard: React.FC<ProductProps> = ({
   type = 'vertical',
 }) => {
   const [loading, setLoading] = useState(true)
-  const { addFavorite, removeFavorite, favorites } = useProductStore()
+  const { addFavorite, removeFavorite, favorites, addToCart } = useProductStore()
   const isFavorite = favorites.some(fav => fav.id === product.id)
 
   useEffect(() => {
@@ -41,6 +41,10 @@ export const ProductCard: React.FC<ProductProps> = ({
     } else {
       addFavorite(product)
     }
+  }
+
+  const handleAddToCart = () => {
+    addToCart(product)
   }
 
   if (!product) {
@@ -111,7 +115,10 @@ export const ProductCard: React.FC<ProductProps> = ({
                 isActive={isFavorite}
                 onClick={handleFavoriteClick}
               />
-              <div className="absolute bottom-0 right-0 mb-2 w-10 h-10 hidden group-hover:flex justify-center items-center bg-primary rounded-full">
+              <div 
+              className="absolute bottom-0 right-0 mb-2 w-10 h-10 hidden group-hover:flex justify-center items-center bg-primary rounded-full"
+              onClick={handleAddToCart}
+              >
                 <PlusIcon color="white" />
               </div>
             </Fragment>
