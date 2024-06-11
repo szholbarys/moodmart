@@ -156,7 +156,12 @@ export default function Header() {
             </button>
           </li>
           <li>
-            <button className="group">
+            <button 
+            className="group"
+            onClick={() => {
+              router.push('/cart')
+            }}
+            >
               <CartIcon
                 color="black"
                 className={`transition-colors ${isTransparent ? 'group-hover:fill-white' : 'group-hover:fill-primary'}`}
