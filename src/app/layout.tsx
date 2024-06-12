@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 }
 
 const blackListFooter = ["login"]
+const testMode = true
 
 export default function RootLayout({
   children,
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main className="w-full">{children}</main>
-        {} <Footer />
+        {!testMode && <Footer />}
       </body>
     </html>
   )
