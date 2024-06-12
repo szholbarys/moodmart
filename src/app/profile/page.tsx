@@ -142,7 +142,9 @@ const orders: Order[] = [
                         <DropdownMenu options={sortingOptions} />
                     </div>
                     
-                    <ProfileOrderItem orders={orders} />
+                    {orders.map(ord => (
+                      <ProfileOrderItem order={ord} />
+                    ))}
                 </div>
             )}
         </div>

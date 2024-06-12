@@ -6,13 +6,13 @@ import orderItemImg from '../../../public/images/order_item.png'
 
 
 type ProfileOrderItemProps = {
-  orders: Order[];
+    order: Order;
 };
 
-const ProfileOrderItem: React.FC<ProfileOrderItemProps> = ({ orders }) => {
+const ProfileOrderItem: React.FC<ProfileOrderItemProps> = ({ order }) => {
   return (
     <>
-      {orders.map(order => (
+      
         <div className='flex items-center justify-between h-[172px] border-b-[1px]'>
             <div className='flex flex-col w-[160px]'>
                 <p className='text-black font-bold text-[24px]'>{order.date.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' })}</p>
@@ -56,12 +56,11 @@ const ProfileOrderItem: React.FC<ProfileOrderItemProps> = ({ orders }) => {
                 <p className='text-black font-bold text-[32px]'>{`${order.totalPrice} ₸`}</p>
             </div>
 
-            <a href='#' className='flex items-center'>
+            <a href={`/profile/details?order_id=${order.customerId}`} className='flex items-center'>
                 <p className='mr-2'>Подробнее</p>
                 <ArrowIcon size={16} color='black' />
             </a>
         </div> 
-    ))}
   </>
   )
 }
