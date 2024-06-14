@@ -3,19 +3,13 @@ import { Product, Review, Shade } from '@/core/type/product.type'
 import axios from 'axios'
 import { createJSONStorage, persist } from 'zustand/middleware'
 
-type CartItem = Product & { quantity: number }
-
 type ProductStore = {
   products: Product[]
   favorites: Product[]
-  cart: CartItem[]
   setProducts: (products: Product[]) => void
   fetchProducts: () => Promise<void>
   addFavorite: (product: Product) => void
   removeFavorite: (productId: string) => void
-  addToCart: (product: Product) => void
-  removeFromCart: (productId: string) => void
-  clearCart: () => void
   loading: boolean
   error: string | null
   findProductById: (id: string) => Product | undefined
@@ -26,7 +20,6 @@ const useProductStore = create<ProductStore>()(
     (set, get) => ({
       products: [],
       favorites: [],
-      cart: [],
       loading: false,
       error: null,
       setProducts: (products) => set({ products }),
@@ -67,28 +60,6 @@ const useProductStore = create<ProductStore>()(
       removeFavorite: (productId: string) => {
         const favorites = get().favorites.filter(product => product.id !== productId)
         set({ favorites })
-      },
-      addToCart: (product: Product) => {
-        const cart = get().cart
-        const existingItem = cart.find(item => item.id === product.id)
-        if (existingItem) {
-          set({
-            cart: cart.map(item =>
-              item.id === product.id
-                ? { ...item, quantity: item.quantity + 1 }
-                : item
-            )
-          })
-        } else {
-          set({ cart: [...cart, { ...product, quantity: 1 }] })
-        }
-      },
-      removeFromCart: (productId: string) => {
-        const cart = get().cart.filter(product => product.id !== productId)
-        set({ cart })
-      },
-      clearCart: () => {
-        set({ cart: [] })
       },
       findProductById: (id: string) => {
         const product = get().products.find((product) => product.id === id)

@@ -6,21 +6,30 @@ import { PlusIcon } from '../shared/icons/plusIcon'
 import { StarRating } from '../shared/StarRating'
 import { useRouter } from 'next/navigation'
 import useProductStore from '@/store/product'
+import useCartStore from '@/store/cart'
 import { HeartIcon } from '../shared/icons/heartIcon'
+import { CloseIcon } from '../shared/icons/closeIcon'
 
 interface ProductProps {
   product: Product
   className?: string
   type?: 'horizontal' | 'vertical'
+  hidePlusIcon?: boolean
+  hideLabels?: boolean
+  cartLayout?: boolean
 }
 
 export const ProductCard: React.FC<ProductProps> = ({
   product,
   className,
   type = 'vertical',
+  hidePlusIcon = false,
+  hideLabels = false,
+  cartLayout = false,
 }) => {
   const [loading, setLoading] = useState(true)
-  const { addFavorite, removeFavorite, favorites, addToCart } = useProductStore()
+  const { addFavorite, removeFavorite, favorites } = useProductStore()
+  const { addToCart, removeFromCart } = useCartStore()
   const isFavorite = favorites.some(fav => fav.id === product.id)
 
   useEffect(() => {
@@ -43,12 +52,57 @@ export const ProductCard: React.FC<ProductProps> = ({
     }
   }
 
-  const handleAddToCart = () => {
+  const handleAddToCartClick = () => {
     addToCart(product)
   }
 
   if (!product) {
     return null
+  }
+
+  if (cartLayout) {
+    return (
+      <div className={`flex items-center p-4 border border-gray-200 rounded-lg ${className}`}>
+        <div className="relative w-24 h-24 mr-4">
+          {product.cover ? (
+            <Image
+              src={product.cover}
+              width={96}
+              height={96}
+              alt={product.name}
+              className="object-cover rounded-lg"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-gray-100 rounded-lg">
+              <h3 className="text-22px font-semibold">Нет фотографий</h3>
+            </div>
+          )}
+          <HeartIcon
+            className="absolute top-0 right-0 m-2 cursor-pointer"
+            color={isFavorite ? 'red' : 'var(--grey)'}
+            isActive={isFavorite}
+            onClick={handleFavoriteClick}
+          />
+        </div>
+        <div className="flex-1">
+          <p className="text-gray-500">{product.category}</p>
+          <h3 className="text-lg font-bold">{product.name}</h3>
+          <p className="text-sm text-gray-500">{product.description}</p>
+        </div>
+        <div className="text-right">
+          {product.oldPrice && (
+            <p className="text-sm text-gray-500 line-through">{product.oldPrice}₸</p>
+          )}
+          <p className="text-lg font-bold">{product.price}₸</p>
+          <button
+            className="mt-2 text-red-500"
+            onClick={() => removeFromCart(product.id)}
+          >
+            <CloseIcon color='black' />
+          </button>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -95,33 +149,37 @@ export const ProductCard: React.FC<ProductProps> = ({
                 </h3>
               </div>
             )}
-            <Fragment>
-              <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
-                {product.isNew && (
-                  <p className="bg-neon_green py-0.5 px-2">NEW</p>
-                )}
-                {product.discount && product.discount > 0 && (
-                  <p className="bg-orange text-white py-0.5 px-2">
-                    {product.discount}%
-                  </p>
-                )}
-                {product.isHit && (
-                  <p className="bg-gold text-black py-0.5 px-2">HIT</p>
-                )}
-              </div>
-              <HeartIcon
-                className={`absolute top-0 right-0 m-2 cursor-pointer ${isFavorite ? 'text-red-500' : 'text-grey-500'}`}
-                color="var(--grey)"
-                isActive={isFavorite}
-                onClick={handleFavoriteClick}
-              />
-              <div 
-              className="absolute bottom-0 right-0 mb-2 w-10 h-10 hidden group-hover:flex justify-center items-center bg-primary rounded-full"
-              onClick={handleAddToCart}
+            {!hideLabels && (
+              <Fragment>
+                <div className="flex absolute top-0 left-0 font-sans font-meduim leading-5">
+                  {product.isNew && (
+                    <p className="bg-neon_green py-0.5 px-2">NEW</p>
+                  )}
+                  {product.discount && product.discount > 0 && (
+                    <p className="bg-orange text-white py-0.5 px-2">
+                      {product.discount}%
+                    </p>
+                  )}
+                  {product.isHit && (
+                    <p className="bg-gold text-black py-0.5 px-2">HIT</p>
+                  )}
+                </div>
+              </Fragment>
+            )}
+            <HeartIcon
+              className="absolute top-0 right-0 m-2 cursor-pointer"
+              color={isFavorite ? 'red' : 'var(--grey)'}
+              isActive={isFavorite}
+              onClick={handleFavoriteClick}
+            />
+            {!hidePlusIcon && (
+              <div
+                className="absolute bottom-0 right-0 mb-2 w-10 h-10 hidden group-hover:flex justify-center items-center bg-primary rounded-full"
+                onClick={handleAddToCartClick}
               >
                 <PlusIcon color="white" />
               </div>
-            </Fragment>
+            )}
           </div>
           <div
             onClick={() => {
@@ -162,4 +220,3 @@ export const ProductCard: React.FC<ProductProps> = ({
     </div>
   )
 }
- 
